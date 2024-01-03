@@ -5,7 +5,7 @@ import { EmblaCarousel } from "../../components/carousel/EmblaCarousel";
 function Hero() {
     return (
       <>
-        <section className="h-[90vh] flex flex-col mt-[7em] items-center">
+        <section className="h-[80vh] flex flex-col justify-center  items-center">
           <EmblaCarousel />
           <div className="flex flex-col justify-center items-center gap-10 px-5">
             <h1 className="text-[30px] text-white font-extrabold text-center">
