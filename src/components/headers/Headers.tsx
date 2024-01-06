@@ -26,11 +26,11 @@ function Headers() {
   }, []);
   return (
     <header
-      className={`flex justify-between items-center p-5 shadow-md bg-[#365486] ${
+      className={`flex justify-between items-center p-5 shadow-md  ${
         isScrolled ? "fixed top-0 w-full z-50 transition-all duration-500" : ""
       }`}
     >
-      <Link className="text-[20px] text-white font-bold" to="/">
+      <Link className="text-[20px]  font-bold" to="/">
         Capstone
       </Link>
       <nav
@@ -83,15 +83,15 @@ function Headers() {
         </ul>
       </nav>
       <div className="flex items-center gap-5 md:hidden">
-        <CgShoppingCart className="text-white" />
+        <CgShoppingCart className="" />
         <button
           className="transition-all duration-500"
           onClick={() => setTogglenav(!togglenav)}
         >
           {togglenav ? (
-            <CgClose className="text-[20px] transition-all duration-500 text-white" />
+            <CgClose className="text-[20px] transition-all duration-500 " />
           ) : (
-            <CgMenuLeft className="text-[20px] transition-all duration-500 text-white" />
+            <CgMenuLeft className="text-[20px] transition-all duration-500" />
           )}
         </button>
       </div>
