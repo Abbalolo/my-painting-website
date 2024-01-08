@@ -1,43 +1,44 @@
 // import React, { useEffect } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
+import image1 from "../../assets/IMG_20240107_185810_822.jpg"
+import image2 from "../../assets/IMG_20240107_185937_034.jpg"
+import image3 from "../../assets/IMG_20240107_185941_000.jpg"
+import image4 from "../../assets/IMG_20240107_190048_278.jpg"
+import image5 from "../../assets/IMG_20240107_190154_199.jpg"
+import image6 from "../../assets/IMG_20240107_190225_496.jpg"
 
 export const EmblaCarousel = () => {
   const [emblaRef] = useEmblaCarousel({ loop: false }, [Autoplay()]);
 
   return (
-    <div
-      className="embla absolute top-16 left-0 z-[-1] "
-      ref={emblaRef}
-    >
+    <div className="embla absolute top-16 left-0 z-[-1] " ref={emblaRef}>
       <div className="embla__container ">
+        <div className="embla__slide">
+          <img className="w-full h-full" src={image2} alt="paint bucket " />
+        </div>
+        <div className="embla__slide">
+          <img className="w-full h-full" src={image3} alt="paint bucket 2  " />
+        </div>
         <div className="embla__slide">
           <img
             className="w-full h-full"
-            src="https://images.unsplash.com/photo-1525909002-1b05e0c869d8?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aG91c2UlMjBwYWludGluZ3xlbnwwfHwwfHx8MA%3D%3D"
-            alt="paint brush "
+            src={image1}
+            alt="decor living room "
           />
         </div>
         <div className="embla__slide">
           <img
-            className="w-full"
-            src="https://images.unsplash.com/photo-1564078516393-cf04bd966897?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="living room "
+            className="w-full h-full"
+            src={image4}
+            alt="decor living room 2"
           />
         </div>
         <div className="embla__slide">
-          <img
-            className="w-full"
-            src="https://images.unsplash.com/photo-1578059456805-cd4809a05d70?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fGhvdXNlJTIwcGFpbnRpbmd8ZW58MHwxfDB8fHww"
-            alt="decor "
-          />
+          <img className="w-full h-full" src={image5} alt="decor " />
         </div>
         <div className="embla__slide">
-          <img
-            className="w-full"
-            src="https://images.unsplash.com/photo-1583275830686-0e4d5ad6b4f2?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dhttps://images.unsplash.com/photo-1578059456805-cd4809a05d70?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fGhvdXNlJTIwcGFpbnRpbmd8ZW58MHwxfDB8fHww"
-            alt="decor "
-          />
+          <img className="w-full h-full" src={image6} alt="pop decor " />
         </div>
       </div>
     </div>

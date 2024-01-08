@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { CgShoppingCart } from "react-icons/cg"; 
 import { Link } from "react-router-dom"
 import Blur from "../blur/Blur";
+import technophilicsLogo from "../../assets/technophilicslogo.png";
 
 function Headers() {
 
@@ -26,12 +27,20 @@ function Headers() {
   }, []);
   return (
     <header
-      className={`flex justify-between items-center p-5 shadow-md  ${
-        isScrolled ? "fixed top-0 w-full z-50 transition-all duration-500" : ""
+      className={`bg-white flex justify-between items-center p-5 shadow-md  overflow-hidden${
+        isScrolled ? "fixed top-0 w-full z-50 transition-all duration-500 " : ""
       }`}
     >
-      <Link className="text-[20px]  font-bold" to="/">
-        Capstone
+      <Link
+        className="text-[16px] text-blue-950  font-bold flex items-center"
+        to="/"
+      >
+        <img
+          className="w-[40px] h-full"
+          src={technophilicsLogo}
+          alt="technophilics logo"
+        />
+        Technophilics
       </Link>
       <nav
         className={
@@ -43,7 +52,7 @@ function Headers() {
         <ul className="text-[16px] flex flex-col md:flex-row md:gap-5 font-medium">
           <Link
             onClick={() => setTogglenav(!togglenav)}
-            className="border-b md:border-none p-3 px-5 md:p-0 hover:bg-slate-50 md:hover:bg-transparent  md:hover:text-blue-600 hover:text-[#365486]  translate-all duration-300"
+            className="border-b md:border-none p-3 px-7 md:p-0 hover:bg-slate-50 md:hover:bg-transparent  md:hover:text-[#00B7DD] hover:text-[#00B7DD]  translate-all duration-300"
             to="/"
           >
             Home
@@ -51,7 +60,7 @@ function Headers() {
 
           <Link
             onClick={() => setTogglenav(!togglenav)}
-            className="border-b md:border-none p-3 px-5 md:p-0 hover:bg-slate-50 md:hover:bg-transparent  md:hover:text-blue-600 hover:text-[#365486]  translate-all duration-300"
+            className="border-b md:border-none p-3 px-7 md:p-0 hover:bg-slate-50 md:hover:bg-transparent  md:hover:text-[#00B7DD] hover:text-[#00B7DD]  translate-all duration-300"
             to="service"
           >
             Our Services
@@ -59,7 +68,7 @@ function Headers() {
 
           <Link
             onClick={() => setTogglenav(!togglenav)}
-            className="border-b md:border-none p-3 px-5 md:p-0 hover:bg-slate-50 md:hover:bg-transparent  md:hover:text-blue-600 hover:text-[#365486]  translate-all duration-300"
+            className="border-b md:border-none p-3 px-7 md:p-0 hover:bg-slate-50 md:hover:bg-transparent  md:hover:text-[#00B7DD] hover:text-[#00B7DD] translate-all duration-300"
             to=""
           >
             Testimonials
@@ -67,7 +76,7 @@ function Headers() {
 
           <Link
             onClick={() => setTogglenav(!togglenav)}
-            className="border-b md:border-none p-3 px-5 md:p-0 hover:bg-slate-50 md:hover:bg-transparent  md:hover:text-blue-600 hover:text-[#365486]  translate-all duration-300"
+            className="border-b md:border-none p-3 px-7 md:p-0 hover:bg-slate-50 md:hover:bg-transparent  md:hover:text-[#00B7DD] hover:text-[#00B7DD]  translate-all duration-300"
             to=""
           >
             About Us
@@ -75,7 +84,7 @@ function Headers() {
 
           <Link
             onClick={() => setTogglenav(!togglenav)}
-            className="border-b md:border-none p-3 px-5 md:p-0 hover:bg-slate-50 md:hover:bg-transparent  md:hover:text-blue-600 hover:text-[#365486] translate-all duration-300"
+            className="border-b md:border-none p-3 px-7 md:p-0 hover:bg-slate-50 md:hover:bg-transparent  md:hover:text-[#00B7DD] hover:text-[#00B7DD] translate-all duration-300"
             to=""
           >
             Contact Us
