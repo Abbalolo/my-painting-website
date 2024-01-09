@@ -15,7 +15,7 @@ export const EmblaCarousel = () => {
     <div className="embla absolute top-16 left-0 z-[-1] " ref={emblaRef}>
       <div className="embla__container ">
         <div className="embla__slide">
-          <img className="w-full h-full" src={image2} alt="paint bucket " />
+          <img className="w-full h-full " src={image2} alt="paint bucket " />
         </div>
         <div className="embla__slide">
           <img className="w-full h-full" src={image3} alt="paint bucket 2  " />

@@ -1,36 +1,29 @@
-import { CgClose } from "react-icons/cg"; 
-import { CgMenuLeft } from "react-icons/cg"; 
-import { useEffect, useState } from "react";
-import { CgShoppingCart } from "react-icons/cg"; 
-import { Link } from "react-router-dom"
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
+import { CgClose } from "react-icons/cg";
+import { CgMenuLeft } from "react-icons/cg";
+import { useState} from "react";
+import { CgShoppingCart } from "react-icons/cg";
+import { Link } from "react-router-dom";
 import Blur from "../blur/Blur";
 import technophilicsLogo from "../../assets/technophilicslogo.png";
 
 function Headers() {
+  const [togglenav, setTogglenav] = useState(false);
+  const [togglepage, setTogglepage] = useState(false);
 
-  const [togglenav, setTogglenav] = useState(false)
-    const [isScrolled, setIsScrolled] = useState(false);
+  const handlePage = () => {
+    setTogglepage(!togglepage);
+  };
 
-  
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      const scrollThreshold = 100;
-      setIsScrolled(scrollPosition > scrollThreshold);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+ 
   return (
     <header
-      className={`bg-white flex justify-between items-center p-5 shadow-md  overflow-hidden${
-        isScrolled ? "fixed top-0 w-full z-50 transition-all duration-500 " : ""
-      }`}
+      className={`fixed top-0 bg-white flex justify-between items-center px-5 py-3 shadow-md overflow-hidden p-0 w-full z-50 transition-all duration-500 " 
+      `}
     >
+      {togglenav ? (
+        <Blur togglenav={togglenav} setTogglenav={setTogglenav} />
+      ) : null}
       <Link
         className="text-[16px] text-blue-950  font-bold flex items-center"
         to="/"
@@ -49,46 +42,50 @@ function Headers() {
             : "bg-white  -left-full shadow-lg fixed top-14 md:top-0 md:static md:shadow-none h-[50%] z-50 md:bg-transparent md:text-white"
         }
       >
-        <ul className="text-[16px] flex flex-col md:flex-row md:gap-5 font-medium">
-          <Link
-            onClick={() => setTogglenav(!togglenav)}
-            className="border-b md:border-none p-3 px-7 md:p-0 hover:bg-slate-50 md:hover:bg-transparent  md:hover:text-[#00B7DD] hover:text-[#00B7DD]  translate-all duration-300"
-            to="/"
-          >
-            Home
-          </Link>
+        <ul className="text-[14px] flex flex-col md:flex-row md:gap-5 font-medium text-black ">
+          <li className="border-b md:border-none p-3 px-7 md:p-0 hover:bg-slate-50 md:hover:bg-transparent  md:hover:text-[#00B7DD] hover:text-[#00B7DD]  translate-all duration-300">
+            <Link onClick={() => setTogglenav(!togglenav)} to="/">
+              HOME
+            </Link>
+          </li>
+          <li className="border-b md:border-none p-3 px-7 md:p-0 hover:bg-slate-50 md:hover:bg-transparent  md:hover:text-[#00B7DD] hover:text-[#00B7DD]  translate-all duration-300">
+            <Link onClick={() => setTogglenav(!togglenav)} to="/aboutus">
+              ABOUT US
+            </Link>
+          </li>
+          <li className="border-b md:border-none p-3 px-7 md:p-0 hover:bg-slate-50 md:hover:bg-transparent  md:hover:text-[#00B7DD] hover:text-[#00B7DD]  translate-all duration-300">
+            <Link onClick={() => setTogglenav(!togglenav)} to="/service">
+              OUR SERVICES
+            </Link>
+          </li>
+          <li className="border-b md:border-none p-3 px-7 md:p-0   ">
+            <span
+              className="flex w-full items-center gap-1 md:hover:text-[#00B7DD] hover:text-[#00B7DD]  translate-all duration-300"
+              onClick={handlePage}
+            >
+              <span className="cursor-pointer">PAGES</span>
+              {togglepage ? <IoIosArrowUp /> : <IoIosArrowDown />}
+            </span>
 
-          <Link
-            onClick={() => setTogglenav(!togglenav)}
-            className="border-b md:border-none p-3 px-7 md:p-0 hover:bg-slate-50 md:hover:bg-transparent  md:hover:text-[#00B7DD] hover:text-[#00B7DD]  translate-all duration-300"
-            to="service"
-          >
-            Our Services
-          </Link>
-
-          <Link
-            onClick={() => setTogglenav(!togglenav)}
-            className="border-b md:border-none p-3 px-7 md:p-0 hover:bg-slate-50 md:hover:bg-transparent  md:hover:text-[#00B7DD] hover:text-[#00B7DD] translate-all duration-300"
-            to=""
-          >
-            Testimonials
-          </Link>
-
-          <Link
-            onClick={() => setTogglenav(!togglenav)}
-            className="border-b md:border-none p-3 px-7 md:p-0 hover:bg-slate-50 md:hover:bg-transparent  md:hover:text-[#00B7DD] hover:text-[#00B7DD]  translate-all duration-300"
-            to=""
-          >
-            About Us
-          </Link>
-
-          <Link
-            onClick={() => setTogglenav(!togglenav)}
-            className="border-b md:border-none p-3 px-7 md:p-0 hover:bg-slate-50 md:hover:bg-transparent  md:hover:text-[#00B7DD] hover:text-[#00B7DD] translate-all duration-300"
-            to=""
-          >
-            Contact Us
-          </Link>
+            {togglepage ? (
+              <ul className="bg-white m-3 flex flex-col gap-3 ">
+                <li className="md:hover:text-[#00B7DD] hover:text-[#00B7DD]  translate-all ">
+                  <Link to="">TESTIMONIAL</Link>
+                </li>
+                <li className="md:hover:text-[#00B7DD] hover:text-[#00B7DD]  translate-all ">
+                  <Link to="">PRODUCT</Link>
+                </li>
+                <li className="md:hover:text-[#00B7DD] hover:text-[#00B7DD]  translate-all ">
+                  <Link to="">TESTIMONIAL</Link>
+                </li>
+              </ul>
+            ) : null}
+          </li>
+          <li className="border-b md:border-none p-3 px-7 md:p-0 hover:bg-slate-50 md:hover:bg-transparent  md:hover:text-[#00B7DD] hover:text-[#00B7DD]  translate-all duration-300">
+            <Link onClick={() => setTogglenav(!togglenav)} to="">
+              CONTACT US
+            </Link>
+          </li>
         </ul>
       </nav>
       <div className="flex items-center gap-5 md:hidden">
@@ -104,11 +101,8 @@ function Headers() {
           )}
         </button>
       </div>
-      {togglenav ? (
-        <Blur togglenav={togglenav} setTogglenav={setTogglenav} />
-      ) : null}
     </header>
   );
 }
 
-export default Headers
+export default Headers;

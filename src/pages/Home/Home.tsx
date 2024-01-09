@@ -1,8 +1,9 @@
 
 import AboutUs from "../About us/AboutUs";
-import Experience from "../Experience/Experience";
+
 import Hero from "../Hero/Hero"
 import Services from "../Service/Services"
+import Testimonial from "../Testimonials/Testimonial";
 import WhyChooseUs from "../whyChooseUS/WhyChooseUs";
 
 
@@ -13,9 +14,8 @@ function Home() {
       <AboutUs />
       <WhyChooseUs/>
 
-        <Services />
-
-      <Experience/>
+      <Services />
+      <Testimonial/>
 
     </div>
   );

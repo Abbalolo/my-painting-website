@@ -15,9 +15,16 @@ body{
 .background{
   background:rgba(0, 0, 0, 0.46);
 
+
 }
 
+
 .embla {
+  overflow: hidden;
+    filter: brightness(40%);
+    background:rgba(40, 40, 40, 0.407);
+}
+.embla2 {
   overflow: hidden;
     filter: brightness(40%);
     background:rgba(40, 40, 40, 0.407);

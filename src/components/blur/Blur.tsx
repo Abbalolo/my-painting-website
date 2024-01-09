@@ -9,8 +9,8 @@ function Blur({
   return (
     <div
       onClick={() => setTogglenav(!togglenav)}
-      className="absolute top-20 left-0 w-full background brightness-75 z-30 h-[88vh]"
-    ></div>
+      className="background fixed top-20 left-0 w-full h-screen brightness-75 z-30"
+    >lolo</div>
   );
 }
 
