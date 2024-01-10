@@ -17,7 +17,7 @@ export const MyData: myCard[] = [
     image: paint,
     description:
       "Discover paints in various types and colors, essential primers, sealers, and undercoats, as well as high-quality painting tools and accessories.",
-    link: "#",
+    link: "service",
   },
   {
     id: 2,
@@ -25,7 +25,7 @@ export const MyData: myCard[] = [
     image: service,
     description:
       "Get expert painting services with a variety of paints, primers, and top-quality tools for a professional finish.",
-    link: "#",
+    link: "service",
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ export const MyData: myCard[] = [
     image: tools,
     description:
       "Discover top-notch painting tools and accessories for all your needs.",
-    link: "#",
+    link: "service",
   },
   {
     id: 6,
@@ -42,7 +42,7 @@ export const MyData: myCard[] = [
       "https://islandpaints.com/wp-content/uploads/2021/10/paint-qualities-that-work-best-for-wet-walls.jpg",
     description:
       "Discover top-notch painting tools and accessories for all your needs.",
-    link: "#",
+    link: "service",
   },
   {
     id: 7,
@@ -51,7 +51,7 @@ export const MyData: myCard[] = [
       "https://thumbor.forbes.com/thumbor/fit-in/x/https://www.forbes.com/home-improvement/wp-content/uploads/2022/07/featured-image-paint.jpeg.jpg",
     description:
       "Discover top-notch painting tools and accessories for all your needs.",
-    link: "#",
+    link: "service",
   },
   {
     id: 8,
@@ -60,7 +60,7 @@ export const MyData: myCard[] = [
       "https://assets-news.housing.com/news/wp-content/uploads/2022/03/05120313/8-9.jpg",
     description:
       "Discover top-notch painting tools and accessories for all your needs.",
-    link: "#",
+    link: "service",
   },
   {
     id: 8,
@@ -69,6 +69,6 @@ export const MyData: myCard[] = [
       "https://www.nipponpaint.co.in/wp-content/uploads/2023/03/2-Geometric-Shapes-1024x576.jpg",
     description:
       "Discover top-notch painting tools and accessories for all your needs.",
-    link: "#",
+    link: "service",
   },
 ];

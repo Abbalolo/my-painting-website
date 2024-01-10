@@ -1,6 +1,5 @@
 import { MdOutlineArrowForwardIos } from "react-icons/md"; 
 import { MdOutlineArrowBackIosNew } from "react-icons/md"; 
-// import React, { useEffect } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 
@@ -16,7 +15,7 @@ export const EmblaCarousel2 = () => {
   return (
     <div className="overflow-hidden" ref={emblaRef}>
       <div className="embla__container ">
-        <div className="embla__slide flex flex-col gap-2">
+        <div className="embla__slide flex flex-col gap-3">
           <img
             className="w-[100px] h-full object-cover "
             src="https://media.gettyimages.com/id/1404722078/photo/senior-black-man-with-i-voted-sticker.jpg?s=612x612&w=0&k=20&c=um7HUolKHgtThWwtypxxF4Pjkh2iAjGrPkBo7rdHqD0="

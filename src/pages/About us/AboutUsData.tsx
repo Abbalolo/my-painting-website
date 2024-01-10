@@ -17,7 +17,7 @@ export const services: myService[] = [
     image: paintStock,
     description:
       "Aliqu diam amet diam et eos erat ipsum lorem stet lorem sit clita duo justo erat amet",
-    link: "#",
+    link: "aboutus",
   },
   {
     number: "02",
@@ -26,7 +26,7 @@ export const services: myService[] = [
       "https://media.istockphoto.com/id/1286123261/photo/home-painter-is-painting-walls-with-paint-roller-and-paints-during-renovation.webp?b=1&s=170667a&w=0&k=20&c=jRj-n9LM94ucByRaYr-UOaWApTw504Tc170xAITdamE=",
     description:
       "Aliqu diam amet diam et eos erat ipsum lorem stet lorem sit clita duo justo erat amet",
-    link: "#",
+    link: "aboutus",
   },
   {
     number: "03",
@@ -35,7 +35,7 @@ export const services: myService[] = [
       "https://images.unsplash.com/photo-1535673774336-ef95d2851cf3?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     description:
       "Aliqu diam amet diam et eos erat ipsum lorem stet lorem sit clita duo justo erat amet",
-    link: "#",
+    link: "aboutus",
   },
   {
     number: "04",
@@ -43,7 +43,7 @@ export const services: myService[] = [
     image: interior,
     description:
       "Aliqu diam amet diam et eos erat ipsum lorem stet lorem sit clita duo justo erat amet",
-    link: "#",
+    link: "aboutus",
   },
   {
     number: "05",
@@ -52,7 +52,7 @@ export const services: myService[] = [
       "https://static.asianpaints.com/content/dam/asianpaintsbeautifulhomes/gallery/false-ceiling-design/false-ceiling-design-for-bedroom-with-pop-design/false-ceiling-design-for-bedroom-with-pop-design.jpg",
     description:
       "Aliqu diam amet diam et eos erat ipsum lorem stet lorem sit clita duo justo erat amet",
-    link: "#",
+    link: "aboutus",
   },
   {
     number: "06",
@@ -60,7 +60,7 @@ export const services: myService[] = [
     image: walldecor,
     description:
       "Aliqu diam amet diam et eos erat ipsum lorem stet lorem sit clita duo justo erat amet",
-    link: "#",
+    link: "aboutus",
   },
   {
     number: "07",
@@ -69,6 +69,6 @@ export const services: myService[] = [
       "https://static.asianpaints.com/content/dam/apcolourcatalogue/asset/ap-revamp/design-guide/home-painting-guide/painting-service.png",
     description:
       "Aliqu diam amet diam et eos erat ipsum lorem stet lorem sit clita duo justo erat amet",
-    link: "#",
+    link: "aboutus",
   },
 ];

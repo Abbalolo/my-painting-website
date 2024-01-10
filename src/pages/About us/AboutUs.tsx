@@ -12,14 +12,14 @@ function AboutUs() {
       <section className="bg-white md:flex-row flex justify-center  flex-col gap-20 p-5 lg:py-20 pt-24">
         <div>
           <img
-          className="h-full md:h-[400px] lg:h-[600px] object-cover w-full"
+          className="h-full md:h-[400px] lg:h-[500px] object-cover w-full"
             src="https://c1.wallpaperflare.com/preview/766/245/233/painter-painting-employee-building.jpg"
             alt="painter painting wall"
           />
         </div>
 
         <div className="md:w-[50%]">
-          <div className="flex  gap-5 ">
+          <div className="flex gap-5 ">
             <div className="w-[20px] h-[160px] bg-[#00B7DD]"></div>
             <div>
               <p className="font-bold text-gray-400">ABOUT US</p>
@@ -59,9 +59,6 @@ function AboutUs() {
             }}
             key={index}
           >
-            {/* <div className=" absolute top-0 left-0 z-[1]">
-              <img src={card.image} alt="" />
-            </div> */}
 
             <div className="background h-full pt-20 p-5 pb-10 flex flex-col gap-5 transition-transform origin-top duration-500 ">
               <h2 className="font-extrabold text-[100px] text-transparent">
@@ -72,13 +69,13 @@ function AboutUs() {
 
               <h3 className="text-white font-bold text-[20px] ">{card.name}</h3>
               <p className="text-white">{card.description}</p>
-              <Link
+              {/* <Link
                 className="flex items-center gap-1 text-white"
                 to={card.link}
               >
                 READ MORE {""}
                 <AiOutlineArrowRight />
-              </Link>
+              </Link> */}
             </div>
           </div>
         ))}
