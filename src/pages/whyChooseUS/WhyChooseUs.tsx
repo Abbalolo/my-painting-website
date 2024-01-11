@@ -5,14 +5,14 @@ import aboutimage from "../../assets/aboutimage.png";
 
 function WhyChooseUs() {
   return (
-    <section className="bg-white flex flex-col lg:flex-row p-5 lg:py-10 ">
-      <div>
+    <section className="bg-white flex flex-col gap-10 lg:flex-row p-5 md:p-16 lg:p-20 ">
+      <div className="md:w-[90%]">
         <div className="">
           <div className="flex gap-5 ">
-            <div className="w-[10px] h-[160px] bg-[#00B7DD]"></div>
+            <div className="w-[10px] h-[110px] lg:h-[60px] bg-[#00B7DD]"></div>
             <div>
               <p className="font-bold text-gray-400">WHY CHOOSE US</p>
-              <h2 className="font-bold text-[30px]">
+              <h2 className="font-bold lg:text-[40px] md:text-[30px]">
                 Expertise and Distinctive Company Attributes
               </h2>
             </div>
@@ -68,7 +68,7 @@ function WhyChooseUs() {
       </div>
 
       <img
-        className="object-contain md:hidden  lg:w-[400px] h-[100%]"
+        className="object-contain hidden  lg:block  lg:w-[400px] h-full"
         src={aboutimage}
         alt="man with paint brush"
       />

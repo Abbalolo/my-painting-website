@@ -3,11 +3,13 @@ import { Link } from "react-router-dom";
 
 
 import Hero from "../Hero/Hero"
-import Testimonial from "../Testimonials/Testimonial";
 import WhyChooseUs from "../whyChooseUS/WhyChooseUs";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { services } from "../About us/AboutUsData";
 import { MyData } from "../Service/ServiceData";
+import { EmblaCarousel2 } from "../../components/carousel2/EmblaCarousel2";
+import { BsCheckAll, BsPeopleFill } from "react-icons/bs";
+import ContactUS from "../ContactUS/ContactUS";
 
 
 function Home() {
@@ -18,7 +20,7 @@ function Home() {
       <section className="bg-white md:flex-row flex justify-center  flex-col gap-20 p-5 lg:py-20 pt-24">
         <div>
           <img
-            className="h-full md:h-[400px] lg:h-[600px] object-cover w-full"
+            className="h-full md:h-[400px] lg:h-[500px] object-cover w-full"
             src="https://c1.wallpaperflare.com/preview/766/245/233/painter-painting-employee-building.jpg"
             alt="painter painting wall"
           />
@@ -26,10 +28,10 @@ function Home() {
 
         <div className="md:w-[50%]">
           <div className="flex gap-5 ">
-            <div className="w-[20px] h-[160px] md:h-[200px] lg:h-[110px] bg-[#00B7DD]"></div>
+            <div className="w-[15px] h-[160px] md:h-[200px] lg:h-[190px] bg-[#00B7DD]"></div>
             <div>
               <p className="font-bold text-gray-400">ABOUT US</p>
-              <h2 className="font-bold text-[30px]">
+              <h2 className="font-bold lg:text-[40px] md:text-[30px]">
                 Exclusive Solutions for Residential and Industrial Paint Sales
                 and Services
               </h2>
@@ -69,7 +71,6 @@ function Home() {
                 <span style={{ WebkitTextStroke: "3px #00B7DD" }}>
                   {card.number}
                 </span>
-                
               </h2>
 
               <h3 className="text-white font-bold text-[20px] ">{card.name}</h3>
@@ -88,13 +89,13 @@ function Home() {
 
       <WhyChooseUs />
 
-      <section className="bg-white p-5 pt-24">
+      <section className="bg-white p-5 md:p-16 lg:px-20  ">
         <div className="">
           <div className="flex  gap-5 ">
-            <div className="w-[10px] h-[160px] md:h-[200px] lg:h-[110px] bg-[#00B7DD]"></div>
+            <div className="w-[5px] h-[160px] md:h-[70px] lg:h-[70px] bg-[#00B7DD]"></div>
             <div>
               <p className="font-bold text-gray-400">OUR SERVICES</p>
-              <h2 className="font-bold text-[30px]">
+              <h2 className="font-bold lg:text-[40px] md:text-[30px]">
                 Expertise and Distinctive Company Attributes
               </h2>
             </div>
@@ -108,14 +109,14 @@ function Home() {
           </p>
         </div>
 
-        <div className="  grid md:grid-cols-3 lg:grid-cols-4  gap-7 mt-5 ">
+        <div className="  grid md:grid-cols-3  gap-7 mt-5 ">
           {MyData?.slice(0, 4).map((card) => (
             <div
               className=" group border w-full flex flex-col justify-center items-center rounded-lg overflow-hidden shadow-md"
               key={card.id}
             >
               <img
-                className="w-full h-[300px] md:h-[100%]  object-cover"
+                className="w-full h-full object-cover"
                 src={card.image}
                 alt={card.name}
               />
@@ -139,7 +140,50 @@ function Home() {
         </div>
       </section>
 
-      <Testimonial />
+      <ContactUS />
+
+      <section className="bg-white p-5 pt-24 lg:flex gap-10 md:p-16 lg:px-20 ">
+        <div>
+          <div className="">
+            <div className="flex  gap-5 ">
+              <div className="w-[5px] h-[120px]  md:h-[110px] lg:h-[70px] bg-[#00B7DD]"></div>
+              <div>
+                <p className="font-bold text-gray-400">TESTIMONIAL</p>
+                <h2 className="font-bold lg:text-[40px] md:text-[30px]">
+                  What Our Happy Clients Say!
+                </h2>
+              </div>
+            </div>
+            <p className="text-gray-500 leading-7 mt-5 ">
+              Technophilic Engr. LTD transformed our space into a masterpiece
+              with precise painting, enchanting decorations, and personalized
+              color consultations. Elevate your surroundings with their
+              unmatched expertise!
+            </p>
+          </div>
+
+          <div className="flex flex-col md:flex-row gap-5 mt-5">
+            <div>
+              <div className="text-[30px] flex items-center gap-2 ">
+                <BsPeopleFill className="text-[#00B7DD]" />
+                200+
+              </div>
+              <span className="font-bold text-[25px]">Happy Clients</span>
+            </div>
+            <div>
+              <div className="text-[30px] flex items-center gap-2">
+                <BsCheckAll className="text-[#00B7DD] text-[30px]" />
+                120+
+              </div>
+              <span className="font-bold text-[25px]">Projects Done</span>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-5 lg:w-[80%]">
+          <EmblaCarousel2 />
+        </div>
+      </section>
     </div>
   );
 }

@@ -9,10 +9,10 @@ function Services() {
     <section className="bg-white p-5 pt-24">
       <div className="">
         <div className="flex  gap-5 ">
-          <div className="w-[10px] h-[160px] md:h-[200px] lg:h-[110px] bg-[#00B7DD]"></div>
+          <div className="w-[10px] h-[110px] md:h-[200px] lg:h-[110px] bg-[#00B7DD]"></div>
           <div>
             <p className="font-bold text-gray-400">OUR SERVICES</p>
-            <h2 className="font-bold text-[30px]">
+            <h2 className="font-boldlg:text-[40px] md:text-[30px]">
               Expertise and Distinctive Company Attributes
             </h2>
           </div>
@@ -26,14 +26,14 @@ function Services() {
         </p>
       </div>
 
-      <div className="  grid md:grid-cols-3 lg:grid-cols-4  gap-7 mt-5 ">
+      <div className="  grid md:grid-cols-3 gap-7 mt-5 ">
         {MyData?.map((card) => (
           <div
             className=" group border w-full flex flex-col justify-center items-center rounded-lg overflow-hidden shadow-md"
             key={card.id}
           >
             <img
-              className="w-full h-[300px] md:h-[100%]  object-cover"
+              className="w-full h-full  object-cover"
               src={card.image}
               alt={card.name}
             />

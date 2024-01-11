@@ -1,6 +1,6 @@
 import paint from "../../assets/paint.jpg"
-import tools from "../../assets/tools.png"
-import service from "../../assets/service.jpg"
+
+import services from "../../assets/services.jpg"
 
 interface myCard {
   id: number;
@@ -22,7 +22,8 @@ export const MyData: myCard[] = [
   {
     id: 2,
     name: "Painting Services",
-    image: service,
+    image:
+      services,
     description:
       "Get expert painting services with a variety of paints, primers, and top-quality tools for a professional finish.",
     link: "service",
@@ -30,7 +31,8 @@ export const MyData: myCard[] = [
   {
     id: 3,
     name: "Accessories and Tools",
-    image: tools,
+    image:
+      "https://images.unsplash.com/photo-1599388164241-8494a6c05f2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHBhaW50JTIwYnJ1c2h8ZW58MHwwfDB8fHwy",
     description:
       "Discover top-notch painting tools and accessories for all your needs.",
     link: "service",
@@ -48,7 +50,7 @@ export const MyData: myCard[] = [
     id: 7,
     name: "Custom paint colour center",
     image:
-      "https://thumbor.forbes.com/thumbor/fit-in/x/https://www.forbes.com/home-improvement/wp-content/uploads/2022/07/featured-image-paint.jpeg.jpg",
+      "https://images.unsplash.com/photo-1581079289196-67865ea83118?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29sb3IlMjBjaGFydHxlbnwwfDB8MHx8fDI%3D",
     description:
       "Discover top-notch painting tools and accessories for all your needs.",
     link: "service",

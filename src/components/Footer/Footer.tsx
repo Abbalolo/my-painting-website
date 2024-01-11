@@ -74,27 +74,39 @@ function Footer() {
       <h3 className="font-semibold text-[20px] mt-5">Quick Links</h3>
 
       <div className="flex flex-col gap-3 mt-3">
-        <Link to="" className="flex items-center gap-1 ">
+        <Link
+          to="/aboutus"
+          className="flex items-center gap-1 hover:text-[18px] transition-all duration-300"
+        >
           <IoIosArrowForward />
-          <span className="text-gray-300 hover:border-b-gray-50 hover:border-b">
+          <span className="text-gray-300">
             About US
           </span>
         </Link>
-        <Link to="" className="flex items-center gap-1">
+        <Link
+          to="/contactus"
+          className="flex items-center gap-1 hover:text-[18px] transition-all duration-300"
+        >
           <IoIosArrowForward />
-          <span className="text-gray-300 hover:border-b-gray-50 hover:border-b">
+          <span className="text-gray-300">
             Contact US
           </span>
         </Link>
-        <Link to="" className="flex items-center gap-1">
+        <Link
+          to="/service"
+          className="flex items-center gap-1 hover:text-[18px] transition-all duration-300"
+        >
           <IoIosArrowForward />
-          <span className="text-gray-300 hover:border-b-gray-50 hover:border-b">
+          <span className="text-gray-300">
             Our Services
           </span>
         </Link>
-        <Link to="" className="flex items-center gap-1">
+        <Link
+          to="#"
+          className="flex items-center gap-1 hover:text-[18px] transition-all duration-300"
+        >
           <IoIosArrowForward />
-          <span className="text-gray-300 hover:border-b-gray-50 hover:border-b">
+          <span className="text-gray-300">
             Terms & Condition
           </span>
         </Link>

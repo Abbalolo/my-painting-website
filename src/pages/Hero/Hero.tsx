@@ -8,7 +8,7 @@ function Hero() {
         <section className="h-[100vh] flex flex-col justify-center relative  items-center">
           <EmblaCarousel />
           <div className="flex flex-col justify-center items-center gap-10 px-5">
-            <h1 className="text-[30px] text-white font-extrabold text-center">
+            <h1 className="lg:text-[40px] md:text-[30px] text-white font-extrabold text-center">
               Transform Your Space with Our Premium Paints and Expert Painting
               Services
             </h1>

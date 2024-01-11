@@ -40,14 +40,21 @@ function ContactForm() {
 
   const handleInputChange = (name: string, value: string) => {
     setInputValues((prevValues) => ({ ...prevValues, [name]: value }));
+   
   };
 
+  const handleSubmit = (event: any) => {
+    event.preventDefault();
+     console.log({ inputValues });
+  
+  }
+
   return (
-    <form className="mt-5 ">
+    <form onSubmit={handleSubmit} className="mt-5 w-full">
       <div className="grid md:grid-cols-2 gap-3">
         {myInputs?.slice(0, 4).map((input) => (
           <div
-            className="focus-within:ring ring-[#00b8dd68] border-none w-full bg-[#182333] flex flex-col group relative h-12 overflow-hidden px-5"
+            className="focus-within:ring ring-[#00b8dd68] border-none w-full bg-[#182333] flex flex-col group relative h-12 overflow-hidden "
             key={input.id}
           >
             <label
@@ -55,17 +62,18 @@ function ContactForm() {
               className={`${
                 inputValues[input.name]
                   ? "hidden text-gray-500"
-                  : "translate-y-[9px]  text-sm text-gray-500"
-              } text-base transition-all duration-300 group-focus-within:text-xs group-focus-within:translate-y-0 py-1`}
+                  : "translate-y-[6px]  text-sm text-gray-500"
+              } text-base transition-all duration-300 group-focus-within:text-xs group-focus-within:translate-y-0 p-2`}
             >
               {input.name}
             </label>
             <input
-              className="bg-transparent outline-none absolute pt-3 w-full h-full text-gray-400"
+              className="bg-transparent outline-none absolute pt-3 pl-2 w-full h-full text-gray-400"
               type={input.type}
               name={input.name}
               id={input.name}
               onChange={(e) => handleInputChange(input.name, e.target.value)}
+              required
             />
           </div>
         ))}
@@ -73,25 +81,29 @@ function ContactForm() {
       {myInputs?.slice(4).map((input) => (
         <div
           key={input.id}
-          className="focus-within:ring ring-[#00b8dd68] border-none w-full bg-[#182333] flex flex-col group relative h-20 overflow-hidden px-5 mt-3"
+          className="focus-within:ring ring-[#00b8dd68] border-none w-full bg-[#182333] flex flex-col group relative h-28 overflow-hidden mt-3"
         >
           <label
             htmlFor={input.name}
             className={`${
               inputValues[input.name]
                 ? "hidden text-gray-500"
-                : "translate-y-[9px]  text-sm text-gray-500"
-            } text-base transition-all duration-300 group-focus-within:text-xs group-focus-within:translate-y-0 py-1`}
+                : "translate-y-[6px]  text-sm text-gray-500"
+            } text-base transition-all duration-300 group-focus-within:text-xs group-focus-within:translate-y-0 p-2`}
           >
             {input.name}
           </label>
           <textarea
             name={input.name}
-            className="bg-transparent outline-none absolute pt-3 w-full h-full text-gray-400"
+            className="bg-transparent outline-none absolute pt-3 w-full h-full text-gray-400 pl-2"
             onChange={(e) => handleInputChange(input.name, e.target.value)}
+            required
           ></textarea>
         </div>
       ))}
+      <button className="bg-[#00B7DD] w-full p-3 mt-3" type="submit">
+        Send Us Message
+      </button>
     </form>
   );
 }

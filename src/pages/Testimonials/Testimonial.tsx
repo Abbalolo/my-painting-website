@@ -4,7 +4,7 @@ import { EmblaCarousel2 } from "../../components/carousel2/EmblaCarousel2";
 
 function Testimonial() {
   return (
-    <section className="bg-white p-5 pt-24 lg:flex gap-5">
+    <section className="bg-white p-5 pt-24 lg:flex gap-10">
       <div>
 
         <div className="">
