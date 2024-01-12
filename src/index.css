@@ -5,6 +5,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* *{
+  border: 1px solid;
+} */
 body{
   margin: 0;
   padding: 0;
@@ -15,15 +18,12 @@ body{
 .background{
   background:rgba(0, 0, 0, 0.46);
 
-
-
-
 }
 
 
 .embla {
   overflow: hidden;
-    filter: brightness(40%);
+    filter: brightness(50%);
     background:rgba(40, 40, 40, 0.407);
 }
 .embla2 {

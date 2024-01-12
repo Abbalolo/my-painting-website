@@ -9,6 +9,30 @@ function AboutUs() {
 
   return (
     <>
+      <div className="relative h-[300px] w-full mt-10">
+        <img
+          className="absolute inset-0 h-full w-full object-cover brightness-[50%]"
+          src="https://images.unsplash.com/photo-1634051808431-dda4b7450b72?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cGFpbnQlMjBzZXJ2aWNlfGVufDB8MHwwfHx8Mg%3D%3D"
+          alt="aboutus"
+        />
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center ">
+          <h2 className="font-extrabold text-3xl">About Us</h2>
+          <ul className="flex items-center justify-center space-x-2 mt-5">
+            <li>
+              <Link to="/" className="text-white">
+                Home
+              </Link>
+            </li>
+            <span>/</span>
+            <li>
+              <Link to="aboutus" className=" text-[#00B7DD]">
+                About
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+
       <section className="bg-white md:flex-row flex justify-center  flex-col gap-20 p-5 lg:py-20 pt-24">
         <div>
           <img
@@ -20,10 +44,10 @@ function AboutUs() {
 
         <div className="md:w-[50%]">
           <div className="flex gap-5 ">
-            <div className="w-[15px] h-[160px] lg:h-[190px] bg-[#00B7DD]"></div>
+            <div className="w-[15px] h-[160px] lg:h-[190px] md:h-[100px] bg-[#00B7DD]"></div>
             <div>
               <p className="font-bold text-gray-400">ABOUT US</p>
-              <h2 className="font-bold lg:text-[40px] md:text-[30px]">
+              <h2 className="font-bold lg:text-[40px] text-[30px]">
                 Exclusive Solutions for Residential and Industrial Paint Sales
                 and Services
               </h2>

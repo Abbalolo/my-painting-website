@@ -15,30 +15,46 @@ export const EmblaCarousel = () => {
     <div className="embla absolute top-16 left-0 z-[-1] " ref={emblaRef}>
       <div className="embla__container ">
         <div className="embla__slide">
-          <img className="w-full h-full " src={image2} alt="paint bucket " />
-        </div>
-        <div className="embla__slide">
-          <img className="w-full h-full" src={image3} alt="paint bucket 2  " />
+          <img
+            className="w-full h-full object-cover"
+            src={image2}
+            alt="paint bucket "
+          />
         </div>
         <div className="embla__slide">
           <img
-            className="w-full h-full"
+            className="w-full h-full object-cover"
+            src={image3}
+            alt="paint bucket 2  "
+          />
+        </div>
+        <div className="embla__slide">
+          <img
+            className="w-full h-full object-cover"
             src={image1}
             alt="decor living room "
           />
         </div>
         <div className="embla__slide">
           <img
-            className="w-full h-full"
+            className="w-full h-full object-cover"
             src={image4}
             alt="decor living room 2"
           />
         </div>
         <div className="embla__slide">
-          <img className="w-full h-full" src={image5} alt="decor " />
+          <img
+            className="w-full h-full object-cover"
+            src={image5}
+            alt="decor "
+          />
         </div>
         <div className="embla__slide">
-          <img className="w-full h-full" src={image6} alt="pop decor " />
+          <img
+            className="w-full h-full object-cover"
+            src={image6}
+            alt="pop decor "
+          />
         </div>
       </div>
     </div>

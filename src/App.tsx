@@ -5,6 +5,8 @@ import Services from "./pages/Service/Services"
 import AboutUs from "./pages/About us/AboutUs"
 import Footer from "./components/Footer/Footer"
 import ContactUS from "./pages/ContactUS/ContactUS"
+import WhyChooseUs from "./pages/whyChooseUS/WhyChooseUs"
+import Testimonial from "./pages/Testimonials/Testimonial"
 
 function App() {
 
@@ -18,6 +20,8 @@ function App() {
           <Route path="service" element={<Services/> } />
           <Route path="aboutus" element={<AboutUs/> } />
           <Route path="contactus" element={<ContactUS/> } />
+          <Route path="whychooseus" element={<WhyChooseUs/> } />
+          <Route path="testimonial" element={<Testimonial/> } />
          
         </Routes>
         <Footer/>

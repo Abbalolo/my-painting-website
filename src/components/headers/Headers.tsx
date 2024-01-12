@@ -46,20 +46,14 @@ function Headers() {
         >
           <ul className="text-[14px] flex flex-col md:flex-row md:gap-5 font-medium text-black ">
             <li className="border-b md:border-none p-3 px-7 md:p-0 hover:bg-slate-50 md:hover:bg-transparent  md:hover:text-[#00B7DD] hover:text-[#00B7DD]  translate-all duration-300">
-              <Link  to="/">
-                HOME
-              </Link>
+              <Link to="/">HOME</Link>
             </li>
             <li className="border-b md:border-none p-3 px-7 md:p-0 hover:bg-slate-50 md:hover:bg-transparent  md:hover:text-[#00B7DD] hover:text-[#00B7DD]  translate-all duration-300">
-              <Link  to="/aboutus">
-                ABOUT US
-              </Link>
+              <Link to="/aboutus">ABOUT US</Link>
             </li>
-            
+
             <li className="border-b md:border-none p-3 px-7 md:p-0 hover:bg-slate-50 md:hover:bg-transparent  md:hover:text-[#00B7DD] hover:text-[#00B7DD]  translate-all duration-300">
-              <Link  to="/service">
-                OUR SERVICES
-              </Link>
+              <Link to="/service">OUR SERVICES</Link>
             </li>
             <li
               className="border-b md:border-none p-3 px-7 md:p-0 "
@@ -77,22 +71,20 @@ function Headers() {
                 {togglepage ? (
                   <ul className="bg-white m-3 flex flex-col gap-3 md:fixed top-7 right-24 md:p-4 md:pt-10 rounded-e-lg">
                     <li className="md:hover:text-[#00B7DD] hover:text-[#00B7DD]  translate-all ">
-                      <Link to="">TESTIMONIAL</Link>
+                      <Link to="/whychooseus">Feature</Link>
                     </li>
                     <li className="md:hover:text-[#00B7DD] hover:text-[#00B7DD]  translate-all ">
-                      <Link to="">PRODUCT</Link>
+                      <Link to="/products">Product</Link>
                     </li>
                     <li className="md:hover:text-[#00B7DD] hover:text-[#00B7DD]  translate-all ">
-                      <Link to="">TESTIMONIAL</Link>
+                      <Link to="/testimonial">Testimonial</Link>
                     </li>
                   </ul>
                 ) : null}
               </div>
             </li>
             <li className="border-b md:border-none p-3 px-7 md:p-0 hover:bg-slate-50 md:hover:bg-transparent  md:hover:text-[#00B7DD] hover:text-[#00B7DD]  translate-all duration-300">
-              <Link  to="/contactus">
-                CONTACT US
-              </Link>
+              <Link to="/contactus">CONTACT US</Link>
             </li>
           </ul>
         </nav>
