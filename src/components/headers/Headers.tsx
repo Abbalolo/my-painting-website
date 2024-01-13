@@ -157,7 +157,7 @@ function Headers() {
           </ul>
         </nav>
         <div className="flex items-center gap-5 md:hidden">
-          <CgShoppingCart className="" />
+          {/* <CgShoppingCart className="" /> */}
           <button
             className="transition-all duration-500"
             onClick={ handleNav }

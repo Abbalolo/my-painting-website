@@ -12,8 +12,8 @@ export const EmblaCarousel = () => {
   const [emblaRef] = useEmblaCarousel({ loop: false }, [Autoplay()]);
 
   return (
-    <div className="embla absolute top-16 left-0 z-[-1] " ref={emblaRef}>
-      <div className="embla__container ">
+    <div className="embla absolute top-0 left-0 z-[-1] " ref={emblaRef}>
+      <div className="embla__container h-screen ">
         <div className="embla__slide">
           <img
             className="w-full h-full object-cover"

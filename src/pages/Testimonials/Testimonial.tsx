@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 function Testimonial() {
   return (
     <>
-      <div className="relative h-[300px] w-full mt-10">
+      <div className="relative h-[300px] w-full">
         <img
           className="absolute inset-0 h-full w-full object-cover brightness-[50%]"
           src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aG91c2UlMjBkZXNpZ258ZW58MHwwfDB8fHwy"

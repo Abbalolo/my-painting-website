@@ -9,7 +9,7 @@ function Services() {
 
   return (
     <>
-      <div className="relative h-[300px] w-full mt-10">
+      <div className="relative h-[300px] w-full ">
         <img
           className="absolute inset-0 h-full w-full object-cover brightness-[50%]"
           src="https://images.unsplash.com/photo-1574359411659-15573a27fd0c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aG91c2UlMjBwYWludGluZ3xlbnwwfDB8MHx8fDI%3D"

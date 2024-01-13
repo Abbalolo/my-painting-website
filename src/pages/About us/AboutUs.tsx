@@ -9,7 +9,7 @@ function AboutUs() {
 
   return (
     <>
-      <div className="relative h-[300px] w-full mt-10">
+      <div className="relative h-[300px] w-full ">
         <img
           className="absolute inset-0 h-full w-full object-cover brightness-[50%]"
           src="https://images.unsplash.com/photo-1634051808431-dda4b7450b72?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cGFpbnQlMjBzZXJ2aWNlfGVufDB8MHwwfHx8Mg%3D%3D"

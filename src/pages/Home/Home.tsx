@@ -15,7 +15,7 @@ import { BiCheckDouble } from "react-icons/bi";
 
 function Home() {
   return (
-    <div className="">
+    <div className="flex flex-col gap-5">
       <Hero />
 
       <section className="bg-white md:flex-row flex justify-center  flex-col gap-20 p-5 lg:py-20 pt-24">
@@ -218,7 +218,7 @@ function Home() {
 
       <ContactUS />
 
-      <section className="bg-white p-5 pt-24 lg:flex gap-10 md:p-16 lg:px-20 ">
+      <section className="bg-white p-5  lg:flex gap-10 md:p-16 lg:px-20 ">
         <div>
           <div className="">
             <div className="flex  gap-5 ">
