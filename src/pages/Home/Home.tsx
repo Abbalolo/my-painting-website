@@ -24,6 +24,7 @@ function Home() {
             className="h-full md:h-[400px] lg:h-[500px] object-cover w-full"
             src="https://c1.wallpaperflare.com/preview/766/245/233/painter-painting-employee-building.jpg"
             alt="painter painting wall"
+            loading="lazy"
           />
         </div>
 
@@ -154,6 +155,7 @@ function Home() {
           className="object-contain hidden  lg:block  lg:w-[400px] h-full"
           src={aboutimage}
           alt="man with paint brush"
+          loading="lazy"
         />
         {/* <button className=" bg-[#00B7DD] text-white p-2 w-[130px] mt-5">
         <Link className="flex items-center gap-2" to="contactUs">
@@ -192,6 +194,7 @@ function Home() {
                 className="w-full h-full object-cover"
                 src={card.image}
                 alt={card.name}
+                loading="lazy"
               />
               <div className="p-4 group-hover:bg-[#00B7DD] transition-all duration-200 ">
                 <h4 className="font-semibold my-1 text-center md:text-start group-hover:text-white ">

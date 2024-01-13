@@ -10,10 +10,13 @@ function Testimonial() {
         <img
           className="absolute inset-0 h-full w-full object-cover brightness-[50%]"
           src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aG91c2UlMjBkZXNpZ258ZW58MHwwfDB8fHwy"
-          alt="aboutus"
+          alt="Testimonial"
+          loading="lazy"
         />
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center ">
-          <h2 className="font-extrabold text-3xl">Testimonial</h2>
+          <h2 className="font-extrabold md:text-[40px] text-[30px]">
+            Testimonial
+          </h2>
           <ul className="flex items-center justify-center space-x-2 mt-5">
             <li>
               <Link to="/" className="text-white">
@@ -23,7 +26,8 @@ function Testimonial() {
             <span>/</span>
             <li>
               <Link to="aboutus" className=" text-[#00B7DD]">
-               Testimonial </Link>
+                Testimonial{" "}
+              </Link>
             </li>
           </ul>
         </div>

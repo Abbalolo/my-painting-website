@@ -10,11 +10,14 @@ function WhyChooseUs() {
       <div className="relative h-[300px] w-full mt-10">
         <img
           className="absolute inset-0 h-full w-full object-cover brightness-[50%]"
-          src="https://images.unsplash.com/photo-1634051808431-dda4b7450b72?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cGFpbnQlMjBzZXJ2aWNlfGVufDB8MHwwfHx8Mg%3D%3D"
-          alt="aboutus"
+          src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzh8fHBhaW50aW5nJTIwaG91c2V8ZW58MHx8MHx8fDA%3D"
+          alt="why choose us"
+          loading="lazy"
         />
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center ">
-          <h2 className="font-extrabold text-3xl">About Us</h2>
+          <h2 className="font-extrabold md:text-[40px] text-[30px]">
+            Features
+          </h2>
           <ul className="flex items-center justify-center space-x-2 mt-5">
             <li>
               <Link to="/" className="text-white">
@@ -24,7 +27,7 @@ function WhyChooseUs() {
             <span>/</span>
             <li>
               <Link to="aboutus" className=" text-[#00B7DD]">
-                About
+                Feature
               </Link>
             </li>
           </ul>

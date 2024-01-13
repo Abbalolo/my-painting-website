@@ -49,6 +49,7 @@ export const EmblaCarousel2 = () => {
             className="w-[100px] h-full object-cover"
             src="https://media.gettyimages.com/id/1409948380/photo/business-portrait.jpg?s=612x612&w=0&k=20&c=m2ivjMl1v_eK5n-yv-NM3OqpKMy8XZ_gFOv0pih2TPk="
             alt="customer photo"
+            loading="lazy"
           />
           <p className="text-gray-500">
             I'm beyond impressed with the exceptional painting service provided
@@ -78,6 +79,7 @@ export const EmblaCarousel2 = () => {
             className="w-[100px] h-full object-cover "
             src="https://media.gettyimages.com/id/1409948380/photo/business-portrait.jpg?s=612x612&w=0&k=20&c=m2ivjMl1v_eK5n-yv-NM3OqpKMy8XZ_gFOv0pih2TPk="
             alt="customer photo"
+            loading="lazy"
           />
           <p className="text-gray-500">
             Choosing Technophilic Engr. LTD was a game-changer for my home.
@@ -102,6 +104,7 @@ export const EmblaCarousel2 = () => {
             className="w-[100px] h-full object-cover"
             src="https://media.gettyimages.com/id/1409948380/photo/business-portrait.jpg?s=612x612&w=0&k=20&c=m2ivjMl1v_eK5n-yv-NM3OqpKMy8XZ_gFOv0pih2TPk="
             alt="customer photo"
+            loading="lazy"
           />
           <p className="text-gray-500">
             Choosing Technophilic Engr. LTD was a game-changer for my home.

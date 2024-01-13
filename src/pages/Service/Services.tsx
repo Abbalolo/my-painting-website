@@ -13,10 +13,11 @@ function Services() {
         <img
           className="absolute inset-0 h-full w-full object-cover brightness-[50%]"
           src="https://images.unsplash.com/photo-1574359411659-15573a27fd0c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aG91c2UlMjBwYWludGluZ3xlbnwwfDB8MHx8fDI%3D"
-          alt="aboutus"
+          alt="Services"
+          loading="lazy"
         />
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center ">
-          <h2 className="font-extrabold text-3xl">Our Services</h2>
+          <h2 className="font-extrabold md:text-[40px] text-[30px]">Our Services</h2>
           <ul className="flex items-center justify-center space-x-2 mt-5">
             <li>
               <Link to="/" className="text-white">
@@ -62,6 +63,7 @@ function Services() {
                 className="w-full h-full  object-cover"
                 src={card.image}
                 alt={card.name}
+                loading="lazy"
               />
               <div className="bg-slate-50 p-4 group-hover:bg-[#00B7DD] transition-all duration-200 ">
                 <h4 className="font-semibold my-1 text-center md:text-start group-hover:text-white ">

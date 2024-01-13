@@ -12,8 +12,22 @@ function Headers() {
   const [togglenav, setTogglenav] = useState(false);
   const [togglepage, setTogglepage] = useState(false);
 
+  const handleNav = () => {
+    setTogglenav(!togglenav);
+    setTogglepage(false);
+
+  }
+
+
   const handlePage = () => {
     setTogglepage(!togglepage);
+  };
+
+
+  const closeNav = () => {
+    setTogglenav(false);
+    setTogglepage(false);
+     
   };
 
  
@@ -45,18 +59,60 @@ function Headers() {
           }
         >
           <ul className="text-[14px] flex flex-col md:flex-row md:gap-5 font-medium text-black ">
-            <li className="border-b md:border-none p-3 px-7 md:p-0 hover:bg-slate-50 md:hover:bg-transparent  md:hover:text-[#00B7DD] hover:text-[#00B7DD]  translate-all duration-300">
+            <li
+              onClick={closeNav}
+              className="border-b md:border-none p-3 px-7 md:p-0 hover:bg-slate-50 md:hover:bg-transparent  md:hover:text-[#00B7DD] hover:text-[#00B7DD]  translate-all duration-300"
+            >
               <Link to="/">HOME</Link>
             </li>
-            <li className="border-b md:border-none p-3 px-7 md:p-0 hover:bg-slate-50 md:hover:bg-transparent  md:hover:text-[#00B7DD] hover:text-[#00B7DD]  translate-all duration-300">
+            <li
+              onClick={closeNav}
+              className="border-b md:border-none p-3 px-7 md:p-0 hover:bg-slate-50 md:hover:bg-transparent  md:hover:text-[#00B7DD] hover:text-[#00B7DD]  translate-all duration-300"
+            >
               <Link to="/aboutus">ABOUT US</Link>
             </li>
 
-            <li className="border-b md:border-none p-3 px-7 md:p-0 hover:bg-slate-50 md:hover:bg-transparent  md:hover:text-[#00B7DD] hover:text-[#00B7DD]  translate-all duration-300">
+            <li
+              onClick={closeNav}
+              className="border-b md:border-none p-3 px-7 md:p-0 hover:bg-slate-50 md:hover:bg-transparent  md:hover:text-[#00B7DD] hover:text-[#00B7DD]  translate-all duration-300"
+            >
               <Link to="/service">OUR SERVICES</Link>
             </li>
+            <li className="border-b md:border-none p-3 px-7 md:p-0 md:hidden">
+              <span
+                className="flex w-full items-center gap-1 md:hover:text-[#00B7DD] hover:text-[#00B7DD]  translate-all duration-300"
+                onClick={handlePage}
+              >
+                <span className="cursor-pointer ">PAGES</span>
+                {togglepage ? <IoIosArrowUp /> : <IoIosArrowDown />}
+              </span>
+              <div className="">
+                {togglepage ? (
+                  <ul className="bg-white m-3 flex flex-col gap-3 md:fixed top-7 right-24 md:p-4 md:pt-10 rounded-e-lg">
+                    <li
+                      onClick={closeNav}
+                      className="md:hover:text-[#00B7DD] hover:text-[#00B7DD]  translate-all "
+                    >
+                      <Link to="/whychooseus">Feature</Link>
+                    </li>
+                    <li
+                      onClick={closeNav}
+                      className="md:hover:text-[#00B7DD] hover:text-[#00B7DD]  translate-all "
+                    >
+                      <Link to="/products">Product</Link>
+                    </li>
+                    <li
+                      onClick={closeNav}
+                      className="md:hover:text-[#00B7DD] hover:text-[#00B7DD]  translate-all "
+                    >
+                      <Link to="/testimonial">Testimonial</Link>
+                    </li>
+                  </ul>
+                ) : null}
+              </div>
+            </li>
             <li
-              className="border-b md:border-none p-3 px-7 md:p-0 "
+              className="border-b md:border-none p-3 px-7 md:p-0 hidden md:block"
               onMouseEnter={() => setTogglepage(true)}
               onMouseLeave={() => setTogglepage(false)}
             >
@@ -70,20 +126,32 @@ function Headers() {
               <div className="">
                 {togglepage ? (
                   <ul className="bg-white m-3 flex flex-col gap-3 md:fixed top-7 right-24 md:p-4 md:pt-10 rounded-e-lg">
-                    <li className="md:hover:text-[#00B7DD] hover:text-[#00B7DD]  translate-all ">
+                    <li
+                      onClick={closeNav}
+                      className="md:hover:text-[#00B7DD] hover:text-[#00B7DD]  translate-all "
+                    >
                       <Link to="/whychooseus">Feature</Link>
                     </li>
-                    <li className="md:hover:text-[#00B7DD] hover:text-[#00B7DD]  translate-all ">
+                    <li
+                      onClick={closeNav}
+                      className="md:hover:text-[#00B7DD] hover:text-[#00B7DD]  translate-all "
+                    >
                       <Link to="/products">Product</Link>
                     </li>
-                    <li className="md:hover:text-[#00B7DD] hover:text-[#00B7DD]  translate-all ">
+                    <li
+                      onClick={closeNav}
+                      className="md:hover:text-[#00B7DD] hover:text-[#00B7DD]  translate-all "
+                    >
                       <Link to="/testimonial">Testimonial</Link>
                     </li>
                   </ul>
                 ) : null}
               </div>
             </li>
-            <li className="border-b md:border-none p-3 px-7 md:p-0 hover:bg-slate-50 md:hover:bg-transparent  md:hover:text-[#00B7DD] hover:text-[#00B7DD]  translate-all duration-300">
+            <li
+              onClick={closeNav}
+              className="border-b md:border-none p-3 px-7 md:p-0 hover:bg-slate-50 md:hover:bg-transparent  md:hover:text-[#00B7DD] hover:text-[#00B7DD]  translate-all duration-300"
+            >
               <Link to="/contactus">CONTACT US</Link>
             </li>
           </ul>
@@ -92,7 +160,7 @@ function Headers() {
           <CgShoppingCart className="" />
           <button
             className="transition-all duration-500"
-            onClick={() => setTogglenav(!togglenav)}
+            onClick={ handleNav }
           >
             {togglenav ? (
               <CgClose className="text-[20px] transition-all duration-500 " />

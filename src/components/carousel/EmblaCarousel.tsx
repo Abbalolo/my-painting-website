@@ -19,6 +19,7 @@ export const EmblaCarousel = () => {
             className="w-full h-full object-cover"
             src={image2}
             alt="paint bucket "
+            loading="lazy"
           />
         </div>
         <div className="embla__slide">
@@ -26,6 +27,7 @@ export const EmblaCarousel = () => {
             className="w-full h-full object-cover"
             src={image3}
             alt="paint bucket 2  "
+            loading="lazy"
           />
         </div>
         <div className="embla__slide">
@@ -33,6 +35,7 @@ export const EmblaCarousel = () => {
             className="w-full h-full object-cover"
             src={image1}
             alt="decor living room "
+            loading="lazy"
           />
         </div>
         <div className="embla__slide">
@@ -40,6 +43,7 @@ export const EmblaCarousel = () => {
             className="w-full h-full object-cover"
             src={image4}
             alt="decor living room 2"
+            loading="lazy"
           />
         </div>
         <div className="embla__slide">
@@ -47,6 +51,7 @@ export const EmblaCarousel = () => {
             className="w-full h-full object-cover"
             src={image5}
             alt="decor "
+            loading="lazy"
           />
         </div>
         <div className="embla__slide">
@@ -54,6 +59,7 @@ export const EmblaCarousel = () => {
             className="w-full h-full object-cover"
             src={image6}
             alt="pop decor "
+            loading="lazy"
           />
         </div>
       </div>

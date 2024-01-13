@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 import technophilicsLogo from "../../assets/technophilicslogo.png";
 function Footer() {
   return (
-    <footer className="bg-[#182333] text-white lg:px-20 lg:pt-10">
+    <footer className="bg-[#182333] text-white lg:px-20 lg:pt-10 p-5 md:p-16 ">
       <div className="grid md:grid-cols-2 lg:grid-cols-3   lg:gap-10">
         <div className="flex flex-col gap-3 ">
           <Link

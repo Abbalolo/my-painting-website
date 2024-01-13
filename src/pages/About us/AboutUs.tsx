@@ -14,9 +14,12 @@ function AboutUs() {
           className="absolute inset-0 h-full w-full object-cover brightness-[50%]"
           src="https://images.unsplash.com/photo-1634051808431-dda4b7450b72?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cGFpbnQlMjBzZXJ2aWNlfGVufDB8MHwwfHx8Mg%3D%3D"
           alt="aboutus"
+          loading="lazy"
         />
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center ">
-          <h2 className="font-extrabold text-3xl">About Us</h2>
+          <h2 className="font-extrabold md:text-[40px] text-[30px]">
+            About Us
+          </h2>
           <ul className="flex items-center justify-center space-x-2 mt-5">
             <li>
               <Link to="/" className="text-white">
@@ -39,6 +42,7 @@ function AboutUs() {
             className="h-full md:h-[400px] lg:h-[500px] object-cover w-full"
             src="https://c1.wallpaperflare.com/preview/766/245/233/painter-painting-employee-building.jpg"
             alt="painter painting wall"
+            loading="lazy"
           />
         </div>
 
