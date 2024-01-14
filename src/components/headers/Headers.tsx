@@ -2,7 +2,7 @@ import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { CgClose } from "react-icons/cg";
 import { CgMenuLeft } from "react-icons/cg";
 import { useState} from "react";
-import { CgShoppingCart } from "react-icons/cg";
+// import { CgShoppingCart } from "react-icons/cg";
 import { Link } from "react-router-dom";
 import Blur from "../blur/Blur";
 import technophilicsLogo from "../../assets/technophilicslogo.png";
