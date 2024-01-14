@@ -91,10 +91,16 @@ export const EmblaCarousel2 = () => {
           <h3 className="font-semibold">Funmilayo Adeyemi</h3>
           <p className="text-gray-500 text-[14px]">Interior Designer</p>
           <div className="flex items-center gap-4 my-3">
-            <button className="border border-[#00B7DD] hover:bg-[#00B7DD] text-[#00B7DD] hover:text-white h-[40px] w-[40px] flex items-center justify-center rounded-full">
+            <button
+              onClick={scrollPrev}
+              className="border border-[#00B7DD] hover:bg-[#00B7DD] text-[#00B7DD] hover:text-white h-[40px] w-[40px] flex items-center justify-center rounded-full"
+            >
               <MdOutlineArrowBackIosNew />
             </button>
-            <button className="border border-[#00B7DD] text-[#00B7DD] hover:text-white hover:bg-[#00B7DD]  h-[40px] w-[40px] flex items-center justify-center rounded-full">
+            <button
+              onClick={scrollNext}
+              className="border border-[#00B7DD] text-[#00B7DD] hover:text-white hover:bg-[#00B7DD]  h-[40px] w-[40px] flex items-center justify-center rounded-full"
+            >
               <MdOutlineArrowForwardIos />
             </button>
           </div>
