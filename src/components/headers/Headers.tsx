@@ -99,7 +99,7 @@ function Headers() {
                       onClick={closeNav}
                       className="md:hover:text-[#00B7DD] hover:text-[#00B7DD]  translate-all "
                     >
-                      <Link to="/whychooseus">Feature</Link>
+                      <Link to="/features">Features</Link>
                     </li>
 
                     <li
@@ -131,7 +131,7 @@ function Headers() {
                       onClick={closeNav}
                       className="md:hover:text-[#00B7DD] hover:text-[#00B7DD]  translate-all "
                     >
-                      <Link to="/whychooseus">Feature</Link>
+                      <Link to="/features">Features</Link>
                     </li>
 
                     <li

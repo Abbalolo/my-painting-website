@@ -33,7 +33,7 @@ function Testimonial() {
         </div>
       </div>
 
-      <section className="bg-white p-5 pt-24 lg:flex gap-5">
+      <section className="bg-white flex flex-col gap-10 lg:flex-row p-5 md:p-16 lg:p-20  ">
         <div>
           <div className="">
             <div className="flex  gap-5 ">
