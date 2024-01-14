@@ -46,7 +46,7 @@ function WhyChooseUs() {
                 </h2>
               </div>
             </div>
-            <p className="text-gray-500 leading-7 mt-5 ">
+            <p className="text-gray-500 text-[14px] md:text-[16px] leading-7 mt-5 ">
               Choose Technophilic Engr. LTD for excellence in transforming
               spaces into artful masterpieces. Our seasoned professionals
               specialize in precise painting, enchanting decorations, and

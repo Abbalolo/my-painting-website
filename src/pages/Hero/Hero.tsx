@@ -6,7 +6,7 @@ import { EmblaCarousel } from "../../components/carousel/EmblaCarousel";
 function Hero() {
     return (
       <>
-        <section className="lg:h-[100vh] h-[80vh] flex flex-col justify-center relative items-center   lg:items-start px-5 lg:px-32 ">
+        <section className="lg:h-[100vh] h-[70vh] flex flex-col justify-center relative items-center   lg:items-start px-5 lg:px-32 ">
           <EmblaCarousel />
           <div className="flex flex-col justify-center lg:justify-start items-start  gap-5   lg:w-[80%]">
             <span className="text-white font-semibold text-[18px]">
@@ -30,10 +30,11 @@ function Hero() {
             </div>
 
             <div className="flex gap-5 mt-2">
-              <button className="text-white bg-[#00B7DD]  px-5 py-2 transition-all duration-300">
-                Request Service
+              
+              <button className="text-white bg-[#00B7DD]  px-5 py-2 transition-all duration-300 rounded">
+                Learn More
               </button>
-              <button className="text-white bg-[#00B7DD]  px-5 py-2 transition-all duration-300">
+              <button className="border border-[#00B7DD] hover:bg-[#00B7DD] hover:text-white text-[#00B7DD]  px-5 py-2 transition-all duration-300 rounded">
                 Request Service
               </button>
             </div>

@@ -9,8 +9,8 @@ import { services } from "../About us/AboutUsData";
 import { MyData } from "../Service/ServiceData";
 import { EmblaCarousel2 } from "../../components/carousel2/EmblaCarousel2";
 import { BsCheckAll, BsPeopleFill } from "react-icons/bs";
-import ContactUS from "../ContactUS/ContactUS";
 import { BiCheckDouble } from "react-icons/bi";
+import ContactForm from "../ContactUS/Form/ContactForm";
 
 
 function Home() {
@@ -39,7 +39,7 @@ function Home() {
               </h2>
             </div>
           </div>
-          <p className="text-gray-500 leading-7 mt-5 ">
+          <p className="text-gray-500 leading-7 mt-5 text-[14px] md:text-[16px]">
             Welcome to Technophilic Engr. LTD, where painting meets perfection!
             Our seasoned professionals specialize in transforming residential
             and industrial spaces into artful masterpieces. From precise
@@ -101,7 +101,7 @@ function Home() {
                 </h2>
               </div>
             </div>
-            <p className="text-gray-500 leading-7 mt-5 ">
+            <p className="text-gray-500 leading-7 mt-5 text-[14px] md:text-[16px]">
               Choose Technophilic Engr. LTD for excellence in transforming
               spaces into artful masterpieces. Our seasoned professionals
               specialize in precise painting, enchanting decorations, and
@@ -112,7 +112,7 @@ function Home() {
 
           <div className="grid md:grid-cols-2 gap-5 mt-5">
             <div className="flex flex-col gap-2">
-              <h3 className="flex items-center gap-3 font-bold text-[18px]">
+              <h3 className="flex items-center gap-3 font-bold text-[16px]">
                 <BiCheckDouble className="font-extrabold text-[40px] text-[#00B7DD]" />
                 11+ years of professional experience
               </h3>
@@ -122,7 +122,7 @@ function Home() {
             </div>
 
             <div className="flex flex-col gap-2">
-              <h3 className="flex items-center gap-3 font-bold text-[18px]">
+              <h3 className="flex items-center gap-3 font-bold text-[16px]">
                 <BiCheckDouble className="font-extrabold text-[40px] text-[#00B7DD]" />
                 Large number of services provided
               </h3>
@@ -131,7 +131,7 @@ function Home() {
               </p>
             </div>
             <div className="flex flex-col gap-2">
-              <h3 className="flex items-center gap-3 font-bold text-[18px]">
+              <h3 className="flex items-center gap-3 font-bold text-[16px]">
                 <BiCheckDouble className="font-extrabold text-[40px] text-[#00B7DD]" />
                 A large number of grateful customers
               </h3>
@@ -140,7 +140,7 @@ function Home() {
               </p>
             </div>
             <div className="flex flex-col gap-2">
-              <h3 className="flex items-center gap-3 font-bold text-[18px]">
+              <h3 className="flex items-center gap-3 font-bold text-[16px]">
                 <BiCheckDouble className="font-extrabold text-[40px] text-[#00B7DD]" />
                 Always reliable and affordable prices
               </h3>
@@ -168,16 +168,16 @@ function Home() {
       <section className="bg-white p-5 md:p-16 lg:px-20  ">
         <div className="flex flex-col  lg:flex-row items-start  lg:items-end gap-10">
           <div className="flex  gap-5 ">
-            <div className="w-[7px] h-[120px] md:h-[70px] lg:h-[130px]  bg-[#00B7DD]"></div>
+            <div className="w-[7px] h-[105px] md:h-[60px] lg:h-[70px]  bg-[#00B7DD]"></div>
             <div>
               <p className="font-bold text-gray-400">OUR SERVICES</p>
               <h2 className="font-bold lg:text-[40px] text-[30px] lg:pr-10">
-                Expertise and Distinctive Company Attributes
+                Experience excellence in our services
               </h2>
             </div>
           </div>
           <button className=" flex items-center justify-center gap-1 w-[150px] p-2 bg-[#00B7DD] text-white">
-            <Link className=" flex items-center  gap-1" to="">
+            <Link className=" flex items-center  gap-1" to="/service">
               READ MORE {""}
               <AiOutlineArrowRight />
             </Link>
@@ -216,7 +216,38 @@ function Home() {
         </div>
       </section>
 
-      <ContactUS />
+      <section className="relative h-full lg:h-screen  bg-cover bg-center flex items-center justify-center p-5 lg:p-20 md:p-16  py-20">
+        <div
+          className="absolute inset-0 bg-cover bg-center brightness-75 top-0 left-0 "
+          style={{
+            backgroundImage:
+              'url("https://c0.wallpaperflare.com/preview/532/107/679/scaffold-build-up-painter-house.jpg")',
+          }}
+        ></div>
+
+        <div className="relative z-10 text-white md:flex justify-center lg:items-center h-full gap-5">
+          <div className="md:w-[100%]">
+            <div className="flex  gap-5 ">
+              <div className="w-[10px] h-[150px] md:h-[190px] lg:h-[190px] bg-[#00B7DD]"></div>
+              <div>
+                <p className="font-bold text-gray-400">APPOINTMENT</p>
+                <h2 className="font-bold lg:text-[40px] text-[30px]">
+                  Let us elevate your space with our expertise and attention to
+                  detail.
+                </h2>
+              </div>
+            </div>
+            <p className="text-white leading-7 mt-5 text-[14px] md:text-[16px]">
+              Choose Technophilic Engr. LTD for excellence in transforming
+              spaces into artful masterpieces. Our seasoned professionals
+              specialize in precise painting, enchanting decorations, and
+              personalized color consultations. Elevate your surroundings with
+              our commitment to crafting unique experiences.
+            </p>
+          </div>
+          <ContactForm />
+        </div>
+      </section>
 
       <section className="bg-white p-5  lg:flex gap-10 md:p-16 lg:px-20 ">
         <div>
@@ -230,7 +261,7 @@ function Home() {
                 </h2>
               </div>
             </div>
-            <p className="text-gray-500 leading-7 mt-5 ">
+            <p className="text-gray-500 leading-7 mt-5 text-[14px] md:text-[16px]">
               Technophilic Engr. LTD transformed our space into a masterpiece
               with precise painting, enchanting decorations, and personalized
               color consultations. Elevate your surroundings with their

@@ -1,6 +1,7 @@
 
 import { Link } from "react-router-dom";
 import { MyData } from "./ServiceData";
+import { AiOutlineArrowRight } from "react-icons/ai";
 
 
 function Services() {
@@ -45,12 +46,12 @@ function Services() {
               </h2>
             </div>
           </div>
-          {/* <button className=" flex items-center justify-center gap-1 w-[150px] p-2 bg-[#00B7DD] text-white">
-            <Link className=" flex items-center  gap-1" to="">
-              READ MORE {""}
+          <button className=" flex items-center justify-center gap-1 w-[150px] p-2 bg-[#00B7DD] text-white">
+            <Link className=" flex items-center  gap-1" to="/appointment">
+              HIre US {""}
               <AiOutlineArrowRight />
             </Link>
-          </button> */}
+          </button>
         </div>
 
         <div className="  grid md:grid-cols-3 gap-7 mt-5 ">

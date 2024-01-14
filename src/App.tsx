@@ -7,6 +7,7 @@ import Footer from "./components/Footer/Footer"
 import ContactUS from "./pages/ContactUS/ContactUS"
 import WhyChooseUs from "./pages/whyChooseUS/WhyChooseUs"
 import Testimonial from "./pages/Testimonials/Testimonial"
+import Appointment from "./pages/ContactUS/Appointment"
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
           <Route path="contactus" element={<ContactUS/> } />
           <Route path="whychooseus" element={<WhyChooseUs/> } />
           <Route path="testimonial" element={<Testimonial/> } />
+          <Route path="appointment" element={<Appointment/> } />
          
         </Routes>
         <Footer/>

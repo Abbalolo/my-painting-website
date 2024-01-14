@@ -29,7 +29,7 @@ function AboutUs() {
             <span>/</span>
             <li>
               <Link to="aboutus" className=" text-[#00B7DD]">
-                About
+                About Us
               </Link>
             </li>
           </ul>
@@ -57,7 +57,7 @@ function AboutUs() {
               </h2>
             </div>
           </div>
-          <p className="text-gray-500 leading-7 mt-5 ">
+          <p className="text-gray-500 text-[14px] md:text-[16px] leading-7 mt-5 ">
             Welcome to Technophilic Engr. LTD, where painting meets perfection!
             Our seasoned professionals specialize in transforming residential
             and industrial spaces into artful masterpieces. From precise
@@ -67,7 +67,7 @@ function AboutUs() {
             walls to craft unique experiences.
           </p>
           <button className="flex items-center gap-1 bg-[#00B7DD] text-white p-2 my-5">
-            <Link className="flex items-center gap-2" to="/aboutus">
+            <Link className="flex items-center gap-2" to="/appointment">
               READ MORE {""}
               <AiOutlineArrowRight />
             </Link>

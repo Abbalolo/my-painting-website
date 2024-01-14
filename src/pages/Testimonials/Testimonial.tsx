@@ -45,7 +45,7 @@ function Testimonial() {
                 </h2>
               </div>
             </div>
-            <p className="text-gray-500 leading-7 mt-5 ">
+            <p className="text-gray-500 text-[14px] md:text-[16px] leading-7 mt-5 ">
               Technophilic Engr. LTD transformed our space into a masterpiece
               with precise painting, enchanting decorations, and personalized
               color consultations. Elevate your surroundings with their

@@ -1,6 +1,5 @@
 import { useState } from "react";
 
-
 interface Input {
   id: number;
   name: string;
@@ -25,7 +24,7 @@ const myInputs: Input[] = [
   },
   {
     id: 4,
-    name: "Service Type",
+    name: "Subject",
     type: "text",
   },
   {
@@ -35,34 +34,31 @@ const myInputs: Input[] = [
   },
 ];
 
-function ContactForm() {
+function ContactUSForm() {
   const [inputValues, setInputValues] = useState<{ [key: string]: string }>({});
 
   const handleInputChange = (name: string, value: string) => {
     setInputValues((prevValues) => ({ ...prevValues, [name]: value }));
-   
   };
 
   const handleSubmit = (event: any) => {
     event.preventDefault();
-     console.log({ inputValues });
-  
-  }
-
+    console.log({ inputValues });
+  };
   return (
     <form onSubmit={handleSubmit} className="mt-5 w-full">
       <div className="grid md:grid-cols-2 gap-3">
         {myInputs?.slice(0, 4).map((input) => (
           <div
-            className="focus-within:ring ring-[#00b8dd68] border-none w-full bg-[#182333] flex flex-col group relative h-[55px] overflow-hidden "
+            className="focus-within:ring ring-[#00b8dd68] border-none w-full bg-slate-100 flex flex-col group relative h-[55px] overflow-hidden "
             key={input.id}
           >
             <label
               htmlFor={input.name}
               className={`${
                 inputValues[input.name]
-                  ? "hidden text-gray-500"
-                  : "translate-y-[6px]  text-sm text-gray-500"
+                  ? "hidden text-gray-400"
+                  : "translate-y-[6px]  text-sm text-gray-400"
               } text-base transition-all duration-300 group-focus-within:text-xs group-focus-within:translate-y-0 p-2`}
             >
               {input.name}
@@ -81,14 +77,14 @@ function ContactForm() {
       {myInputs?.slice(4).map((input) => (
         <div
           key={input.id}
-          className="focus-within:ring ring-[#00b8dd68] border-none w-full bg-[#182333] flex flex-col group relative h-28 overflow-hidden mt-3"
+          className="focus-within:ring ring-[#00b8dd68] border-none w-full bg-slate-100 flex flex-col group relative h-28 overflow-hidden mt-3"
         >
           <label
             htmlFor={input.name}
             className={`${
               inputValues[input.name]
-                ? "hidden text-gray-500"
-                : "translate-y-[6px]  text-sm text-gray-500"
+                ? "hidden text-gray-400"
+                : "translate-y-[6px]  text-sm text-gray-400"
             } text-base transition-all duration-300 group-focus-within:text-xs group-focus-within:translate-y-0 p-2`}
           >
             {input.name}
@@ -101,11 +97,11 @@ function ContactForm() {
           ></textarea>
         </div>
       ))}
-      <button className="bg-[#00B7DD] w-full p-3 mt-3" type="submit">
+      <button className="bg-[#00B7DD] text-white w-full p-3 mt-3" type="submit">
         Send Us Message
       </button>
     </form>
   );
 }
 
-export default ContactForm;
+export default ContactUSForm;

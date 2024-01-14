@@ -27,7 +27,7 @@ export const EmblaCarousel2 = () => {
             created a stunning atmosphere in my home. Thrilled with the results!
           </p>
           <div className="w-[100px] h-[10px] bg-[#00B7DD]"></div>
-          <h3 className="font-semibold">Ibrahim Bello's </h3>
+          <h3 className="font-semibold">Ibrahim Bello </h3>
           <p className="text-gray-500 text-[14px]"> Civil Engineer</p>
           <div className="flex items-center gap-4 my-3">
             <button
@@ -57,7 +57,7 @@ export const EmblaCarousel2 = () => {
             transformed my space into a work of art. Highly recommended!
           </p>
           <div className="w-[100px] h-[10px] bg-[#00B7DD]"></div>
-          <h3 className="font-semibold">Adeolu Ogunleye's </h3>
+          <h3 className="font-semibold">Adeolu Ogunleye </h3>
           <p className="text-gray-500 text-[14px]">Architect</p>
           <div className="flex items-center gap-4 my-3">
             <button

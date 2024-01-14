@@ -69,6 +69,12 @@ function Headers() {
               onClick={closeNav}
               className="border-b md:border-none p-3 px-7 md:p-0 hover:bg-slate-50 md:hover:bg-transparent  md:hover:text-[#00B7DD] hover:text-[#00B7DD]  translate-all duration-300"
             >
+              <Link to="/products">PRODUCTS</Link>
+            </li>
+            <li
+              onClick={closeNav}
+              className="border-b md:border-none p-3 px-7 md:p-0 hover:bg-slate-50 md:hover:bg-transparent  md:hover:text-[#00B7DD] hover:text-[#00B7DD]  translate-all duration-300"
+            >
               <Link to="/aboutus">ABOUT US</Link>
             </li>
 
@@ -95,12 +101,7 @@ function Headers() {
                     >
                       <Link to="/whychooseus">Feature</Link>
                     </li>
-                    <li
-                      onClick={closeNav}
-                      className="md:hover:text-[#00B7DD] hover:text-[#00B7DD]  translate-all "
-                    >
-                      <Link to="/products">Product</Link>
-                    </li>
+
                     <li
                       onClick={closeNav}
                       className="md:hover:text-[#00B7DD] hover:text-[#00B7DD]  translate-all "
@@ -132,12 +133,7 @@ function Headers() {
                     >
                       <Link to="/whychooseus">Feature</Link>
                     </li>
-                    <li
-                      onClick={closeNav}
-                      className="md:hover:text-[#00B7DD] hover:text-[#00B7DD]  translate-all "
-                    >
-                      <Link to="/products">Product</Link>
-                    </li>
+
                     <li
                       onClick={closeNav}
                       className="md:hover:text-[#00B7DD] hover:text-[#00B7DD]  translate-all "
@@ -158,10 +154,7 @@ function Headers() {
         </nav>
         <div className="flex items-center gap-5 md:hidden">
           {/* <CgShoppingCart className="" /> */}
-          <button
-            className="transition-all duration-500"
-            onClick={ handleNav }
-          >
+          <button className="transition-all duration-500" onClick={handleNav}>
             {togglenav ? (
               <CgClose className="text-[20px] transition-all duration-500 " />
             ) : (
