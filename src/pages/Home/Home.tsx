@@ -110,7 +110,7 @@ function Home() {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-5 mt-5">
+          <div className="grid md:grid-cols-2 gap-5 mt-5">
             <div className="flex flex-col gap-2">
               <h3 className="flex items-center gap-3 font-bold text-[16px]">
                 <BiCheckDouble className="font-extrabold text-[40px] text-[#00B7DD]" />
@@ -152,7 +152,7 @@ function Home() {
         </div>
 
         <img
-          className="object-contain h-[500px]  lg:block  lg:w-[400px]"
+          className="object-contain h-[500px] md:hidden  lg:block  lg:w-[400px]"
           src={aboutimage}
           alt="man with paint brush"
           loading="lazy"

@@ -34,7 +34,7 @@ function Headers() {
   return (
     <>
       <header
-        className={`fixed top-0 bg-white flex justify-between items-center px-5 py-3 shadow-md overflow-hidden p-0 w-full z-50 transition-all duration-500 " 
+        className={`fixed top-0 bg-white flex justify-between items-center px-5 lg:px-16 py-3 shadow-md overflow-hidden p-0 w-full z-50 transition-all duration-500 " 
       `}
       >
         {togglenav ? (
@@ -131,7 +131,7 @@ function Headers() {
                       onClick={closeNav}
                       className="md:hover:text-[#00B7DD] hover:text-[#00B7DD]  translate-all "
                     >
-                      <Link to="/features">Features</Link>
+                      <Link to="/features">Feature</Link>
                     </li>
 
                     <li

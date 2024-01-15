@@ -56,7 +56,7 @@ function Features() {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-5 mt-5">
+          <div className="grid md:grid-cols-2 gap-5 mt-5">
             <div className="flex flex-col gap-2">
               <h3 className="flex items-center gap-3 font-bold text-[18px]">
                 <BiCheckDouble className="font-extrabold text-[40px] text-[#00B7DD]" />
@@ -98,7 +98,7 @@ function Features() {
         </div>
 
         <img
-          className="object-contain h-[500px]  lg:block  lg:w-[400px] "
+          className="object-contain h-[500px] md:hidden  lg:block  lg:w-[400px] "
           src={aboutImage}
           alt="man with paint brush"
         />
@@ -114,7 +114,7 @@ function Features() {
         <div>
           <div className="">
             <div className="flex  gap-5 ">
-              <div className="w-[5px] h-[120px]  md:h-[110px] lg:h-[70px] bg-[#00B7DD]"></div>
+              <div className="w-[5px] h-[120px]  md:h-[60px] lg:h-[70px] bg-[#00B7DD]"></div>
               <div>
                 <p className="font-bold text-gray-400">TESTIMONIAL</p>
                 <h2 className="font-bold text-[30px]">

@@ -97,7 +97,7 @@ function WhyChooseUs() {
         </div>
 
         <img
-          className="object-contain hidden  lg:block  lg:w-[400px] h-full"
+          className="object-contain md:hidden  lg:block  lg:w-[400px] h-full"
           src={aboutimage}
           alt="man with paint brush"
         />
