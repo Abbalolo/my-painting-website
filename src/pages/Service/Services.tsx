@@ -27,7 +27,7 @@ function Services() {
             </li>
             <span>/</span>
             <li>
-              <Link to="aboutus" className=" text-[#00B7DD]">
+              <Link to="aboutus" className=" text-[#00ABE4]">
                 service
               </Link>
             </li>
@@ -38,7 +38,7 @@ function Services() {
       <section className="bg-white p-5 md:p-16 lg:p-20  pt-24">
         <div className="flex flex-col lg:flex-row items-start  lg:items-end gap-10">
           <div className="flex  gap-5 ">
-            <div className="w-[7px] h-[110px] md:h-[70px] lg:h-[130px] bg-[#00B7DD]"></div>
+            <div className="w-[7px] h-[110px] md:h-[70px] lg:h-[130px] bg-[#00ABE4]"></div>
             <div>
               <p className="font-bold text-gray-400">OUR SERVICES</p>
               <h2 className="font-bold lg:text-[40px] text-[30px] lg:pr-10">
@@ -46,7 +46,7 @@ function Services() {
               </h2>
             </div>
           </div>
-          <button className=" flex items-center justify-center gap-1 w-[150px] p-2 bg-[#00B7DD] text-white">
+          <button className=" flex items-center justify-center gap-1 w-[150px] p-2 bg-[#00ABE4] text-white">
             <Link className=" flex items-center  gap-1" to="/appointment">
               HIre US {""}
               <AiOutlineArrowRight />
@@ -66,7 +66,7 @@ function Services() {
                 alt={card.name}
                 loading="lazy"
               />
-              <div className="bg-slate-50 p-4 group-hover:bg-[#00B7DD] transition-all duration-200 ">
+              <div className="bg-slate-50 p-4 group-hover:bg-[#00ABE4] transition-all duration-200 ">
                 <h4 className="font-semibold my-1 text-center md:text-start group-hover:text-white ">
                   {card.name}
                 </h4>
@@ -74,7 +74,7 @@ function Services() {
                   {card.description}
                 </p>
                 {/* <Link
-                className=" flex items-center justify-center gap-1 py-3 text-[#00B7DD] group-hover:text-white "
+                className=" flex items-center justify-center gap-1 py-3 text-[#00ABE4] group-hover:text-white "
                 to={card.link}
               >
                 READ MORE {""}

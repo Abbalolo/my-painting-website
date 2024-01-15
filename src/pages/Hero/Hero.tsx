@@ -19,11 +19,11 @@ function Hero() {
 
             <div className="flex items-center gap-3 text-white">
               Commercial
-              <span className="text-[#00B7DD]">
+              <span className="text-[#00ABE4]">
                 <FaCircle />
               </span>
               Residential
-              <span className="text-[#00B7DD]">
+              <span className="text-[#00ABE4]">
                 <FaCircle />
               </span>
               Industrial
@@ -31,10 +31,10 @@ function Hero() {
 
             <div className="flex gap-5 mt-2">
               
-              <button className="text-white bg-[#00B7DD]  px-5 py-2 transition-all duration-300 rounded">
+              <button className="text-white bg-[#00ABE4]  px-5 py-2 transition-all duration-300 rounded">
                 Learn More
               </button>
-              <button className="border border-[#00B7DD] hover:bg-[#00B7DD] hover:text-white text-[#00B7DD]  px-5 py-2 transition-all duration-300 rounded">
+              <button className="border border-[#00ABE4] hover:bg-[#00ABE4] hover:text-white text-[#00ABE4]  px-5 py-2 transition-all duration-300 rounded">
                 Request Service
               </button>
             </div>

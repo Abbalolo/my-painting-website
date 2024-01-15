@@ -97,8 +97,11 @@ function ContactUSForm() {
           ></textarea>
         </div>
       ))}
-      <button className="bg-[#00B7DD] text-white w-full p-3 mt-3" type="submit">
-        Send Us Message
+      <button
+        className="bg-[#00ABE4] text-white  p-3 mt-3 rounded"
+        type="submit"
+      >
+        Send Message
       </button>
     </form>
   );

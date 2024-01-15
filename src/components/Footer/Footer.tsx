@@ -32,19 +32,19 @@ function Footer() {
 
           <div className="flex items-center gap-2">
             <Link
-              className="text-[25px] border border-[#00B7DD] text-[#00B7DD] p-2"
+              className="text-[25px] border border-[#00ABE4] text-[#00ABE4] p-2"
               to=""
             >
               <CgFacebook />
             </Link>
             <Link
-              className="text-[25px] border border-[#00B7DD] text-[#00B7DD] p-2"
+              className="text-[25px] border border-[#00ABE4] text-[#00ABE4] p-2"
               to=""
             >
               <IoLogoWhatsapp />
             </Link>
             <Link
-              className="text-[25px] border border-[#00B7DD] text-[#00B7DD] p-2"
+              className="text-[25px] border border-[#00ABE4] text-[#00ABE4] p-2"
               to=""
             >
               <AiFillLinkedin />

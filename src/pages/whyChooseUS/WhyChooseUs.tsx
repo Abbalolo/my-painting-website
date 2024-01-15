@@ -26,7 +26,7 @@ function WhyChooseUs() {
             </li>
             <span>/</span>
             <li>
-              <Link to="aboutus" className=" text-[#00B7DD]">
+              <Link to="aboutus" className=" text-[#00ABE4]">
                 Feature
               </Link>
             </li>
@@ -38,7 +38,7 @@ function WhyChooseUs() {
         <div className="md:w-[90%]">
           <div className="">
             <div className="flex gap-5 ">
-              <div className="w-[7px] h-[120px] lg:h-[130px] md:h-[100px] bg-[#00B7DD]"></div>
+              <div className="w-[7px] h-[120px] lg:h-[130px] md:h-[100px] bg-[#00ABE4]"></div>
               <div>
                 <p className="font-bold text-gray-400">WHY CHOOSE US</p>
                 <h2 className="font-bold lg:text-[40px] text-[30px]">
@@ -58,7 +58,7 @@ function WhyChooseUs() {
           <div className="grid md:grid-cols-2 gap-5 mt-5">
             <div className="flex flex-col gap-2">
               <h3 className="flex items-center gap-3 font-bold text-[18px]">
-                <BiCheckDouble className="font-extrabold text-[40px] text-[#00B7DD]" />
+                <BiCheckDouble className="font-extrabold text-[40px] text-[#00ABE4]" />
                 11+ years of professional experience
               </h3>
               <p className="text-gray-500">
@@ -68,7 +68,7 @@ function WhyChooseUs() {
 
             <div className="flex flex-col gap-2">
               <h3 className="flex items-center gap-3 font-bold text-[18px]">
-                <BiCheckDouble className="font-extrabold text-[40px] text-[#00B7DD]" />
+                <BiCheckDouble className="font-extrabold text-[40px] text-[#00ABE4]" />
                 Large number of services provided
               </h3>
               <p className="text-gray-500">
@@ -77,7 +77,7 @@ function WhyChooseUs() {
             </div>
             <div className="flex flex-col gap-2">
               <h3 className="flex items-center gap-3 font-bold text-[18px]">
-                <BiCheckDouble className="font-extrabold text-[40px] text-[#00B7DD]" />
+                <BiCheckDouble className="font-extrabold text-[40px] text-[#00ABE4]" />
                 A large number of grateful customers
               </h3>
               <p className="text-gray-500">
@@ -86,7 +86,7 @@ function WhyChooseUs() {
             </div>
             <div className="flex flex-col gap-2">
               <h3 className="flex items-center gap-3 font-bold text-[18px]">
-                <BiCheckDouble className="font-extrabold text-[40px] text-[#00B7DD]" />
+                <BiCheckDouble className="font-extrabold text-[40px] text-[#00ABE4]" />
                 Always reliable and affordable prices
               </h3>
               <p className="text-gray-500">
@@ -101,7 +101,7 @@ function WhyChooseUs() {
           src={aboutimage}
           alt="man with paint brush"
         />
-        {/* <button className=" bg-[#00B7DD] text-white p-2 w-[130px] mt-5">
+        {/* <button className=" bg-[#00ABE4] text-white p-2 w-[130px] mt-5">
         <Link className="flex items-center gap-2" to="contactUs">
           Contact US {""}
           <AiOutlineArrowRight />

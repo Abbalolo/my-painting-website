@@ -28,7 +28,7 @@ function AboutUs() {
             </li>
             <span>/</span>
             <li>
-              <Link to="aboutus" className=" text-[#00B7DD]">
+              <Link to="aboutus" className=" text-[#00ABE4]">
                 About Us
               </Link>
             </li>
@@ -48,7 +48,7 @@ function AboutUs() {
 
         <div className="md:w-[50%]">
           <div className="flex gap-5 ">
-            <div className="w-[15px] h-[160px] lg:h-[190px] md:h-[100px] bg-[#00B7DD]"></div>
+            <div className="w-[15px] h-[160px] lg:h-[190px] md:h-[100px] bg-[#00ABE4]"></div>
             <div>
               <p className="font-bold text-gray-400">ABOUT US</p>
               <h2 className="font-bold lg:text-[40px] text-[30px]">
@@ -66,7 +66,7 @@ function AboutUs() {
             Elevate your space with Technophilic Engr. LTD where we go beyond
             walls to craft unique experiences.
           </p>
-          <button className="flex items-center gap-1 bg-[#00B7DD] text-white p-2 my-5">
+          <button className="flex items-center gap-1 bg-[#00ABE4] text-white p-2 my-5">
             <Link className="flex items-center gap-2" to="/appointment">
               READ MORE {""}
               <AiOutlineArrowRight />
@@ -88,7 +88,7 @@ function AboutUs() {
           >
             <div className="background h-full pt-20 p-5 pb-10 flex flex-col gap-5 transition-transform origin-top duration-500 ">
               <h2 className="font-extrabold text-[100px] text-transparent">
-                <span style={{ WebkitTextStroke: "3px #00B7DD" }}>
+                <span style={{ WebkitTextStroke: "3px #00ABE4" }}>
                   {card.number}
                 </span>
               </h2>

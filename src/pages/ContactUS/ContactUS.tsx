@@ -25,7 +25,7 @@ function ContactUS() {
             </li>
             <span>/</span>
             <li>
-              <Link to="aboutus" className=" text-[#00B7DD]">
+              <Link to="aboutus" className=" text-[#00ABEA]">
                 Contact US
               </Link>
             </li>
@@ -33,11 +33,21 @@ function ContactUS() {
         </div>
       </div>
 
-      <section className=" h-full  bg-cover bg-center flex items-center justify-center p-5 lg:p-20 md:p-16  py-10">
+      <section className=" h-full  bg-cover bg-center md:flex items-center justify-center  p-5 lg:p-20 md:p-16  py-10">
+        <iframe
+          className="mb-10"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.1821581658483!2d3.3225556749937946!3d6.624281893369943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b916e924abce7%3A0x438968b2b5f57c45!2sOlowu%20St%2C%20Ijaiye%2C%20Agege%20102212%2C%20Lagos!5e0!3m2!1sen!2sng!4v1705312640207!5m2!1sen!2sng"
+          width="600"
+          height="450"
+          style={{ border: "0", width: "100%", height: "70vh" }}
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
+
         <div className="  md:flex justify-center lg:items-center h-full gap-5">
           <div className="md:w-[100%]">
             <div className="flex  gap-5 ">
-              <div className="w-[10px] h-[120px] md:h-[190px] lg:h-[130px] bg-[#00B7DD]"></div>
+              <div className="w-[10px] h-[120px] md:h-[190px] lg:h-[130px] bg-[#00ABE4]"></div>
               <div>
                 <p className="font-bold text-gray-400">CONTACT US</p>
                 <h2 className="font-bold lg:text-[40px] text-[30px]">

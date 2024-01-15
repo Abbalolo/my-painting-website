@@ -30,7 +30,7 @@ function Home() {
 
         <div className="md:w-[50%]">
           <div className="flex gap-5 ">
-            <div className="w-[15px] h-[165px] md:h-[200px] lg:h-[190px] bg-[#00B7DD]"></div>
+            <div className="w-[15px] h-[165px] md:h-[200px] lg:h-[190px] bg-[#00ABE4]"></div>
             <div>
               <p className="font-bold text-gray-400">ABOUT US</p>
               <h2 className="font-bold lg:text-[40px] text-[30px]">
@@ -48,7 +48,7 @@ function Home() {
             Elevate your space with Technophilic Engr. LTD where we go beyond
             walls to craft unique experiences.
           </p>
-          <button className="flex items-center gap-1 bg-[#00B7DD] text-white p-2 my-5">
+          <button className="flex items-center gap-1 bg-[#00ABE4] text-white p-2 my-5">
             <Link className="flex items-center gap-2" to="aboutus">
               READ MORE {""}
               <AiOutlineArrowRight />
@@ -70,7 +70,7 @@ function Home() {
           >
             <div className="background h-full pt-20 p-5 pb-10 flex flex-col gap-5 transition-transform origin-top duration-500 ">
               <h2 className="font-extrabold text-[100px] text-transparent">
-                <span style={{ WebkitTextStroke: "3px #00B7DD" }}>
+                <span style={{ WebkitTextStroke: "3px #00ABE4" }}>
                   {card.number}
                 </span>
               </h2>
@@ -93,7 +93,7 @@ function Home() {
         <div className="md:w-[90%]">
           <div className="">
             <div className="flex gap-5 ">
-              <div className="w-[7px] h-[120px] lg:h-[130px] md:h-[100px] bg-[#00B7DD]"></div>
+              <div className="w-[7px] h-[120px] lg:h-[130px] md:h-[100px] bg-[#00ABE4]"></div>
               <div>
                 <p className="font-bold text-gray-400">WHY CHOOSE US</p>
                 <h2 className="font-bold lg:text-[40px] text-[30px]">
@@ -113,7 +113,7 @@ function Home() {
           <div className="grid md:grid-cols-2 gap-5 mt-5">
             <div className="flex flex-col gap-2">
               <h3 className="flex items-center gap-3 font-bold text-[16px]">
-                <BiCheckDouble className="font-extrabold text-[40px] text-[#00B7DD]" />
+                <BiCheckDouble className="font-extrabold text-[40px] text-[#00ABE4]" />
                 11+ years of professional experience
               </h3>
               <p className="text-gray-500">
@@ -123,7 +123,7 @@ function Home() {
 
             <div className="flex flex-col gap-2">
               <h3 className="flex items-center gap-3 font-bold text-[16px]">
-                <BiCheckDouble className="font-extrabold text-[40px] text-[#00B7DD]" />
+                <BiCheckDouble className="font-extrabold text-[40px] text-[#00ABE4]" />
                 Large number of services provided
               </h3>
               <p className="text-gray-500">
@@ -132,7 +132,7 @@ function Home() {
             </div>
             <div className="flex flex-col gap-2">
               <h3 className="flex items-center gap-3 font-bold text-[16px]">
-                <BiCheckDouble className="font-extrabold text-[40px] text-[#00B7DD]" />
+                <BiCheckDouble className="font-extrabold text-[40px] text-[#00ABE4]" />
                 A large number of grateful customers
               </h3>
               <p className="text-gray-500">
@@ -141,7 +141,7 @@ function Home() {
             </div>
             <div className="flex flex-col gap-2">
               <h3 className="flex items-center gap-3 font-bold text-[16px]">
-                <BiCheckDouble className="font-extrabold text-[40px] text-[#00B7DD]" />
+                <BiCheckDouble className="font-extrabold text-[40px] text-[#00ABE4]" />
                 Always reliable and affordable prices
               </h3>
               <p className="text-gray-500">
@@ -157,7 +157,7 @@ function Home() {
           alt="man with paint brush"
           loading="lazy"
         />
-        {/* <button className=" bg-[#00B7DD] text-white p-2 w-[130px] mt-5">
+        {/* <button className=" bg-[#00ABE4] text-white p-2 w-[130px] mt-5">
         <Link className="flex items-center gap-2" to="contactUs">
           Contact US {""}
           <AiOutlineArrowRight />
@@ -168,7 +168,7 @@ function Home() {
       <section className="bg-white p-5 md:p-16 lg:px-20  ">
         <div className="flex flex-col  lg:flex-row items-start  lg:items-end gap-10">
           <div className="flex  gap-5 ">
-            <div className="w-[7px] h-[105px] md:h-[60px] lg:h-[70px]  bg-[#00B7DD]"></div>
+            <div className="w-[7px] h-[105px] md:h-[60px] lg:h-[70px]  bg-[#00ABE4]"></div>
             <div>
               <p className="font-bold text-gray-400">OUR SERVICES</p>
               <h2 className="font-bold lg:text-[40px] text-[30px] lg:pr-10">
@@ -176,7 +176,7 @@ function Home() {
               </h2>
             </div>
           </div>
-          <button className=" flex items-center justify-center gap-1 w-[150px] p-2 bg-[#00B7DD] text-white">
+          <button className=" flex items-center justify-center gap-1 w-[150px] p-2 bg-[#00ABE4] text-white">
             <Link className=" flex items-center  gap-1" to="/service">
               READ MORE {""}
               <AiOutlineArrowRight />
@@ -196,7 +196,7 @@ function Home() {
                 alt={card.name}
                 loading="lazy"
               />
-              <div className="p-4 group-hover:bg-[#00B7DD] transition-all duration-200 ">
+              <div className="p-4 group-hover:bg-[#00ABE4] transition-all duration-200 ">
                 <h4 className="font-semibold my-1 text-center md:text-start group-hover:text-white ">
                   {card.name}
                 </h4>
@@ -204,7 +204,7 @@ function Home() {
                   {card.description}
                 </p>
                 <Link
-                  className=" flex items-center justify-center gap-1 py-3 text-[#00B7DD] group-hover:text-white "
+                  className=" flex items-center justify-center gap-1 py-3 text-[#00ABE4] group-hover:text-white "
                   to={card.link}
                 >
                   READ MORE {""}
@@ -228,7 +228,7 @@ function Home() {
         <div className="relative z-10 text-white md:flex justify-center lg:items-center h-full gap-5">
           <div className="md:w-[100%]">
             <div className="flex  gap-5 ">
-              <div className="w-[10px] h-[150px] md:h-[190px] lg:h-[190px] bg-[#00B7DD]"></div>
+              <div className="w-[10px] h-[150px] md:h-[190px] lg:h-[190px] bg-[#00ABE4]"></div>
               <div>
                 <p className="font-bold text-gray-400">APPOINTMENT</p>
                 <h2 className="font-bold lg:text-[40px] text-[30px]">
@@ -253,7 +253,7 @@ function Home() {
         <div>
           <div className="">
             <div className="flex  gap-5 ">
-              <div className="w-[5px] h-[120px]  md:h-[110px] lg:h-[70px] bg-[#00B7DD]"></div>
+              <div className="w-[5px] h-[120px]  md:h-[110px] lg:h-[70px] bg-[#00ABE4]"></div>
               <div>
                 <p className="font-bold text-gray-400">TESTIMONIAL</p>
                 <h2 className="font-bold lg:text-[40px] text-[30px]">
@@ -272,14 +272,14 @@ function Home() {
           <div className="flex flex-col md:flex-row gap-5 mt-5">
             <div>
               <div className="text-[30px] flex items-center gap-2 ">
-                <BsPeopleFill className="text-[#00B7DD]" />
+                <BsPeopleFill className="text-[#00ABE4]" />
                 200+
               </div>
               <span className="font-bold text-[25px]">Happy Clients</span>
             </div>
             <div>
               <div className="text-[30px] flex items-center gap-2">
-                <BsCheckAll className="text-[#00B7DD] text-[30px]" />
+                <BsCheckAll className="text-[#00ABE4] text-[30px]" />
                 120+
               </div>
               <span className="font-bold text-[25px]">Projects Done</span>

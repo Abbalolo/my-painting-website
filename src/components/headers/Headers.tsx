@@ -61,32 +61,32 @@ function Headers() {
           <ul className="text-[14px] flex flex-col md:flex-row md:gap-5 font-medium text-black ">
             <li
               onClick={closeNav}
-              className="border-b md:border-none p-3 px-7 md:p-0 hover:bg-slate-50 md:hover:bg-transparent  md:hover:text-[#00B7DD] hover:text-[#00B7DD]  translate-all duration-300"
+              className="border-b md:border-none p-3 px-7 md:p-0 hover:bg-slate-50 md:hover:bg-transparent  md:hover:text-[#00ABE4] hover:text-[#00ABE4]  translate-all duration-300"
             >
               <Link to="/">HOME</Link>
             </li>
             <li
               onClick={closeNav}
-              className="border-b md:border-none p-3 px-7 md:p-0 hover:bg-slate-50 md:hover:bg-transparent  md:hover:text-[#00B7DD] hover:text-[#00B7DD]  translate-all duration-300"
+              className="border-b md:border-none p-3 px-7 md:p-0 hover:bg-slate-50 md:hover:bg-transparent  md:hover:text-[#00ABE4] hover:text-[#00ABE4]  translate-all duration-300"
             >
               <Link to="/products">PRODUCTS</Link>
             </li>
             <li
               onClick={closeNav}
-              className="border-b md:border-none p-3 px-7 md:p-0 hover:bg-slate-50 md:hover:bg-transparent  md:hover:text-[#00B7DD] hover:text-[#00B7DD]  translate-all duration-300"
+              className="border-b md:border-none p-3 px-7 md:p-0 hover:bg-slate-50 md:hover:bg-transparent  md:hover:text-[#00ABE4] hover:text-[#00ABE4]  translate-all duration-300"
             >
               <Link to="/aboutus">ABOUT US</Link>
             </li>
 
             <li
               onClick={closeNav}
-              className="border-b md:border-none p-3 px-7 md:p-0 hover:bg-slate-50 md:hover:bg-transparent  md:hover:text-[#00B7DD] hover:text-[#00B7DD]  translate-all duration-300"
+              className="border-b md:border-none p-3 px-7 md:p-0 hover:bg-slate-50 md:hover:bg-transparent  md:hover:text-[#00ABE4] hover:text-[#00ABE4]  translate-all duration-300"
             >
               <Link to="/service">OUR SERVICES</Link>
             </li>
             <li className="border-b md:border-none p-3 px-7 md:p-0 md:hidden">
               <span
-                className="flex w-full items-center gap-1 md:hover:text-[#00B7DD] hover:text-[#00B7DD]  translate-all duration-300"
+                className="flex w-full items-center gap-1 md:hover:text-[#00ABE4] hover:text-[#00ABE4]  translate-all duration-300"
                 onClick={handlePage}
               >
                 <span className="cursor-pointer ">PAGES</span>
@@ -97,14 +97,14 @@ function Headers() {
                   <ul className="bg-white m-3 flex flex-col gap-3 md:fixed top-7 right-24 md:p-4 md:pt-10 rounded-e-lg">
                     <li
                       onClick={closeNav}
-                      className="md:hover:text-[#00B7DD] hover:text-[#00B7DD]  translate-all "
+                      className="md:hover:text-[#00ABE4] hover:text-[#00ABE4]  translate-all "
                     >
                       <Link to="/features">Features</Link>
                     </li>
 
                     <li
                       onClick={closeNav}
-                      className="md:hover:text-[#00B7DD] hover:text-[#00B7DD]  translate-all "
+                      className="md:hover:text-[#00ABE4] hover:text-[#00ABE4]  translate-all "
                     >
                       <Link to="/testimonial">Testimonial</Link>
                     </li>
@@ -118,7 +118,7 @@ function Headers() {
               onMouseLeave={() => setTogglepage(false)}
             >
               <span
-                className="flex w-full items-center gap-1 md:hover:text-[#00B7DD] hover:text-[#00B7DD]  translate-all duration-300"
+                className="flex w-full items-center gap-1 md:hover:text-[#00ABE4] hover:text-[#00ABE4]  translate-all duration-300"
                 onClick={handlePage}
               >
                 <span className="cursor-pointer ">PAGES</span>
@@ -129,14 +129,14 @@ function Headers() {
                   <ul className="bg-white m-3 flex flex-col gap-3 md:fixed top-7 right-24 md:p-4 md:pt-10 rounded-e-lg">
                     <li
                       onClick={closeNav}
-                      className="md:hover:text-[#00B7DD] hover:text-[#00B7DD]  translate-all "
+                      className="md:hover:text-[#00ABE4] hover:text-[#00ABE4]  translate-all "
                     >
                       <Link to="/features">Feature</Link>
                     </li>
 
                     <li
                       onClick={closeNav}
-                      className="md:hover:text-[#00B7DD] hover:text-[#00B7DD]  translate-all "
+                      className="md:hover:text-[#00ABE4] hover:text-[#00ABE4]  translate-all "
                     >
                       <Link to="/testimonial">Testimonial</Link>
                     </li>
@@ -146,7 +146,7 @@ function Headers() {
             </li>
             <li
               onClick={closeNav}
-              className="border-b md:border-none p-3 px-7 md:p-0 hover:bg-slate-50 md:hover:bg-transparent  md:hover:text-[#00B7DD] hover:text-[#00B7DD]  translate-all duration-300"
+              className="border-b md:border-none p-3 px-7 md:p-0 hover:bg-slate-50 md:hover:bg-transparent  md:hover:text-[#00ABE4] hover:text-[#00ABE4]  translate-all duration-300"
             >
               <Link to="/contactus">CONTACT US</Link>
             </li>

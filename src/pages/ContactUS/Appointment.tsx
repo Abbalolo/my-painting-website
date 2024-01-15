@@ -16,7 +16,7 @@ function Appointment() {
       <div className="relative z-10 text-white md:flex justify-center lg:items-center h-full gap-5">
         <div className="md:w-[100%]">
           <div className="flex  gap-5 ">
-            <div className="w-[10px] h-[150px] md:h-[190px] lg:h-[190px] bg-[#00B7DD]"></div>
+            <div className="w-[10px] h-[150px] md:h-[190px] lg:h-[190px] bg-[#00ABE4]"></div>
             <div>
               <p className="font-bold text-gray-400">APPOINTMENT</p>
               <h2 className="font-bold lg:text-[40px] text-[30px]">

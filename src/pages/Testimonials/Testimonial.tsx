@@ -25,7 +25,7 @@ function Testimonial() {
             </li>
             <span>/</span>
             <li>
-              <Link to="aboutus" className=" text-[#00B7DD]">
+              <Link to="aboutus" className=" text-[#00ABE4]">
                 Testimonial{" "}
               </Link>
             </li>
@@ -37,7 +37,7 @@ function Testimonial() {
         <div>
           <div className="">
             <div className="flex  gap-5 ">
-              <div className="w-[5px] h-[120px]  md:h-[60px] lg:h-[70px] bg-[#00B7DD]"></div>
+              <div className="w-[5px] h-[120px]  md:h-[60px] lg:h-[70px] bg-[#00ABE4]"></div>
               <div>
                 <p className="font-bold text-gray-400">TESTIMONIAL</p>
                 <h2 className="font-bold text-[30px]">
@@ -56,14 +56,14 @@ function Testimonial() {
           <div className="flex flex-col md:flex-row gap-5 mt-5">
             <div>
               <div className="text-[30px] flex items-center gap-2 ">
-                <BsPeopleFill className="text-[#00B7DD]" />
+                <BsPeopleFill className="text-[#00ABE4]" />
                 200+
               </div>
               <span className="font-bold text-[25px]">Happy Clients</span>
             </div>
             <div>
               <div className="text-[30px] flex items-center gap-2">
-                <BsCheckAll className="text-[#00B7DD] text-[30px]" />
+                <BsCheckAll className="text-[#00ABE4] text-[30px]" />
                 120+
               </div>
               <span className="font-bold text-[25px]">Projects Done</span>
