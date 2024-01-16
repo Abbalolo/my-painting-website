@@ -24,10 +24,9 @@ function Footer() {
             Technophilics
           </Link>
           <p className="text-gray-300 my-5">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque
-            quidem doloribus excepturi harum, corrupti quis amet deleniti
-            laudantium perferendis aperiam similique dolores autem. Eveniet
-            vitae quidem et ad beatae eum.
+            Welcome to Technophilic Engr. LTD, where painting meets perfection!
+            Our seasoned professionals specialize in transforming residential
+            and industrial spaces into artful masterpieces.
           </p>
 
           <div className="flex items-center gap-2">
@@ -53,22 +52,27 @@ function Footer() {
         </div>
         <div className="lg:mt-0 mt-5 flex flex-col md:items-center">
           <h3 className="font-semibold text-[20px] ">Address</h3>
-          <div className="flex flex-col gap-3 mt-3">
-            <div className="flex items-center gap-3">
-              <ImLocation />
-              <span className="text-gray-300">123 street</span>
+          <div className="flex flex-col gap-5 mt-3">
+            <div className="flex  gap-3">
+              <ImLocation className="text-[35px] md:text-[45px]" />
+              <span className="text-gray-300 ">
+                4&5 Aja Shopping Mall opposite ilaje Bus Stop, Off Lekki Epe
+                Express Way, Ajah Lagos Nigeria.
+              </span>
             </div>
             <div className="flex items-center gap-3">
-              <ImLocation />
-              <span className="text-gray-300">123 street</span>
+              <ImLocation className="text-[20px] " />
+              <span className="text-gray-300">10 Olowu Street Agege Lagos</span>
             </div>
             <div className="flex items-center gap-3">
-              <BsTelephoneFill />
-              <span className="text-gray-300">123 street</span>
+              <BsTelephoneFill className="text-[20px] " />
+              <span className="text-gray-300">
+                +2348036360336 <br /> +23408099009998
+              </span>
             </div>
-            <div className="flex items-center gap-3">
-              <AiTwotoneMail />
-              <span className="text-gray-300">123 street</span>
+            <div className="flex gap-3">
+              <AiTwotoneMail className="text-[20px]" />
+              <span className="text-gray-300 ">tecnophilic@gmail.com</span>
             </div>
           </div>
         </div>
@@ -78,6 +82,13 @@ function Footer() {
 
           <div className="flex flex-col gap-3 mt-3">
             <Link
+              to="/"
+              className="flex items-center gap-1 hover:text-[18px] transition-all duration-300"
+            >
+              <IoIosArrowForward />
+              <span className="text-gray-300">Home</span>
+            </Link>
+            <Link
               to="/aboutus"
               className="flex items-center gap-1 hover:text-[18px] transition-all duration-300"
             >
@@ -85,12 +96,13 @@ function Footer() {
               <span className="text-gray-300">About US</span>
             </Link>
             <Link
-              to="/contactus"
+              to="/aboutus"
               className="flex items-center gap-1 hover:text-[18px] transition-all duration-300"
             >
               <IoIosArrowForward />
-              <span className="text-gray-300">Contact US</span>
+              <span className="text-gray-300">Product</span>
             </Link>
+
             <Link
               to="/service"
               className="flex items-center gap-1 hover:text-[18px] transition-all duration-300"
@@ -99,11 +111,11 @@ function Footer() {
               <span className="text-gray-300">Our Services</span>
             </Link>
             <Link
-              to="#"
+              to="/contactus"
               className="flex items-center gap-1 hover:text-[18px] transition-all duration-300"
             >
               <IoIosArrowForward />
-              <span className="text-gray-300">Terms & Condition</span>
+              <span className="text-gray-300">Contact US</span>
             </Link>
           </div>
         </div>

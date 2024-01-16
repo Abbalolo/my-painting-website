@@ -18,7 +18,7 @@ function Appointment() {
           <div className="flex  gap-5 ">
             <div className="w-[10px] h-[150px] md:h-[190px] lg:h-[190px] bg-[#00ABE4]"></div>
             <div>
-              <p className="font-bold text-gray-400">APPOINTMENT</p>
+              <p className="font-bold text-white">APPOINTMENT</p>
               <h2 className="font-bold lg:text-[40px] text-[30px]">
                 Let us elevate your space with our expertise and attention to
                 detail.

@@ -59,30 +59,26 @@ function Headers() {
           }
         >
           <ul className="text-[14px] flex flex-col md:flex-row md:gap-5 font-medium text-black ">
-            <li
-              onClick={closeNav}
-              className="border-b md:border-none p-3 px-7 md:p-0 hover:bg-slate-50 md:hover:bg-transparent  md:hover:text-[#00ABE4] hover:text-[#00ABE4]  translate-all duration-300"
-            >
-              <Link to="/">HOME</Link>
+            <li className="border-b md:border-none p-3 px-7 md:p-0 hover:bg-slate-50 md:hover:bg-transparent  md:hover:text-[#00ABE4] hover:text-[#00ABE4]  translate-all duration-300">
+              <Link onClick={closeNav} to="/">
+                HOME
+              </Link>
             </li>
-            <li
-              onClick={closeNav}
-              className="border-b md:border-none p-3 px-7 md:p-0 hover:bg-slate-50 md:hover:bg-transparent  md:hover:text-[#00ABE4] hover:text-[#00ABE4]  translate-all duration-300"
-            >
-              <Link to="/products">PRODUCTS</Link>
+            <li className="border-b md:border-none p-3 px-7 md:p-0 hover:bg-slate-50 md:hover:bg-transparent  md:hover:text-[#00ABE4] hover:text-[#00ABE4]  translate-all duration-300">
+              <Link onClick={closeNav} to="/products">
+                PRODUCTS
+              </Link>
             </li>
-            <li
-              onClick={closeNav}
-              className="border-b md:border-none p-3 px-7 md:p-0 hover:bg-slate-50 md:hover:bg-transparent  md:hover:text-[#00ABE4] hover:text-[#00ABE4]  translate-all duration-300"
-            >
-              <Link to="/aboutus">ABOUT US</Link>
+            <li className="border-b md:border-none p-3 px-7 md:p-0 hover:bg-slate-50 md:hover:bg-transparent  md:hover:text-[#00ABE4] hover:text-[#00ABE4]  translate-all duration-300">
+              <Link onClick={closeNav} to="/aboutus">
+                ABOUT US
+              </Link>
             </li>
 
-            <li
-              onClick={closeNav}
-              className="border-b md:border-none p-3 px-7 md:p-0 hover:bg-slate-50 md:hover:bg-transparent  md:hover:text-[#00ABE4] hover:text-[#00ABE4]  translate-all duration-300"
-            >
-              <Link to="/service">OUR SERVICES</Link>
+            <li className="border-b md:border-none p-3 px-7 md:p-0 hover:bg-slate-50 md:hover:bg-transparent  md:hover:text-[#00ABE4] hover:text-[#00ABE4]  translate-all duration-300">
+              <Link onClick={closeNav} to="/service">
+                OUR SERVICES
+              </Link>
             </li>
             <li className="border-b md:border-none p-3 px-7 md:p-0 md:hidden">
               <span
@@ -95,18 +91,16 @@ function Headers() {
               <div className="">
                 {togglepage ? (
                   <ul className="bg-white m-3 flex flex-col gap-3 md:fixed top-7 right-24 md:p-4 md:pt-10 rounded-e-lg">
-                    <li
-                      onClick={closeNav}
-                      className="md:hover:text-[#00ABE4] hover:text-[#00ABE4]  translate-all "
-                    >
-                      <Link to="/features">Features</Link>
+                    <li className="md:hover:text-[#00ABE4] hover:text-[#00ABE4]  translate-all ">
+                      <Link onClick={closeNav} to="/features">
+                        Features
+                      </Link>
                     </li>
 
-                    <li
-                      onClick={closeNav}
-                      className="md:hover:text-[#00ABE4] hover:text-[#00ABE4]  translate-all "
-                    >
-                      <Link to="/testimonial">Testimonial</Link>
+                    <li className="md:hover:text-[#00ABE4] hover:text-[#00ABE4]  translate-all ">
+                      <Link onClick={closeNav} to="/testimonial">
+                        Testimonial
+                      </Link>
                     </li>
                   </ul>
                 ) : null}
@@ -127,28 +121,25 @@ function Headers() {
               <div className="">
                 {togglepage ? (
                   <ul className="bg-white m-3 flex flex-col gap-3 md:fixed top-7 right-24 md:p-4 md:pt-10 rounded-e-lg">
-                    <li
-                      onClick={closeNav}
-                      className="md:hover:text-[#00ABE4] hover:text-[#00ABE4]  translate-all "
-                    >
-                      <Link to="/features">Feature</Link>
+                    <li className="md:hover:text-[#00ABE4] hover:text-[#00ABE4]  translate-all ">
+                      <Link onClick={closeNav} to="/features">
+                        Feature
+                      </Link>
                     </li>
 
-                    <li
-                      onClick={closeNav}
-                      className="md:hover:text-[#00ABE4] hover:text-[#00ABE4]  translate-all "
-                    >
-                      <Link to="/testimonial">Testimonial</Link>
+                    <li className="md:hover:text-[#00ABE4] hover:text-[#00ABE4]  translate-all ">
+                      <Link onClick={closeNav} to="/testimonial">
+                        Testimonial
+                      </Link>
                     </li>
                   </ul>
                 ) : null}
               </div>
             </li>
-            <li
-              onClick={closeNav}
-              className="border-b md:border-none p-3 px-7 md:p-0 hover:bg-slate-50 md:hover:bg-transparent  md:hover:text-[#00ABE4] hover:text-[#00ABE4]  translate-all duration-300"
-            >
-              <Link to="/contactus">CONTACT US</Link>
+            <li className="border-b md:border-none p-3 px-7 md:p-0 hover:bg-slate-50 md:hover:bg-transparent  md:hover:text-[#00ABE4] hover:text-[#00ABE4]  translate-all duration-300">
+              <Link onClick={closeNav} to="/contactus">
+                CONTACT US
+              </Link>
             </li>
           </ul>
         </nav>

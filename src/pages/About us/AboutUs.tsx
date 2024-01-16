@@ -66,7 +66,7 @@ function AboutUs() {
             Elevate your space with Technophilic Engr. LTD where we go beyond
             walls to craft unique experiences.
           </p>
-          <button className="flex items-center gap-1 bg-[#00ABE4] text-white p-2 my-5">
+          <button className="flex items-center gap-1 rounded bg-[#00ABE4] text-white p-2 my-5">
             <Link className="flex items-center gap-2" to="/appointment">
               READ MORE {""}
               <AiOutlineArrowRight />

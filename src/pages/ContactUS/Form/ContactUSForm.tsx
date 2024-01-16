@@ -98,7 +98,7 @@ function ContactUSForm() {
         </div>
       ))}
       <button
-        className="bg-[#00ABE4] text-white  p-3 mt-3 rounded"
+        className="bg-[#00ABE4] text-white text-[15px] p-3   mt-3 rounded"
         type="submit"
       >
         Send Message

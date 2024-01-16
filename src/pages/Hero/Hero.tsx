@@ -1,6 +1,7 @@
 import { FaCircle } from "react-icons/fa"; 
 
 import { EmblaCarousel } from "../../components/carousel/EmblaCarousel";
+import { Link } from "react-router-dom";
 
 
 function Hero() {
@@ -30,13 +31,16 @@ function Hero() {
             </div>
 
             <div className="flex gap-5 mt-2">
-              
-              <button className="text-white bg-[#00ABE4]  px-5 py-2 transition-all duration-300 rounded">
-                Learn More
-              </button>
-              <button className="border border-[#00ABE4] hover:bg-[#00ABE4] hover:text-white text-[#00ABE4]  px-5 py-2 transition-all duration-300 rounded">
-                Request Service
-              </button>
+              <Link to="/aboutus">
+                <button className="text-white bg-[#00ABE4]  px-5 py-2 transition-all duration-300 rounded">
+                  Learn More
+                </button>
+              </Link>
+              <Link to="/appointment">
+                <button className="border border-[#00ABE4] hover:bg-[#00ABE4] hover:text-white text-[#00ABE4]  px-5 py-2 transition-all duration-300 rounded">
+                  Request Service
+                </button>
+              </Link>
             </div>
           </div>
         </section>

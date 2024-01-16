@@ -46,7 +46,7 @@ function Services() {
               </h2>
             </div>
           </div>
-          <button className=" flex items-center justify-center gap-1 w-[150px] p-2 bg-[#00ABE4] text-white">
+          <button className=" flex items-center justify-center gap-1 w-[150px] rounded py-2 bg-[#00ABE4] text-white">
             <Link className=" flex items-center  gap-1" to="/appointment">
               HIre US {""}
               <AiOutlineArrowRight />
