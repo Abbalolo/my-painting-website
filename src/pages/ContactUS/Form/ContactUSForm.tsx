@@ -45,6 +45,29 @@ function ContactUSForm() {
     event.preventDefault();
     console.log({ inputValues });
   };
+
+
+  interface configuraation {
+    Username: string;
+    Password: string;
+    Host: string;
+    To: string;
+    From: string;
+    Subject: string;
+    Body: string;
+  }
+
+  const confiq: configuraation = {
+    Username: "abbalolo360@BiLogoGmail.com",
+    Password: "9905B5F359D408A9A291653A608C32AE55BE",
+    Host: "smtp.elasticemail.com",
+    To: "them@website.com",
+    From: "you@isp.com",
+    Subject: "This is the subject",
+    Body: "And this is the body",
+  };
+
+ 
   return (
     <form onSubmit={handleSubmit} className="mt-5 w-full">
       <div className="grid md:grid-cols-2 gap-3">
