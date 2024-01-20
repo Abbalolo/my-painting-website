@@ -47,16 +47,16 @@ function ContactUSForm() {
   };
 
 
-  interface configuraation {
-    Username: string;
-    Password: string;
-    Host: string;
-    Port: number;
-    To: string;
-    From: string;
-    Subject: string;
-    Body: string;
-  }
+  // interface configuraation {
+  //   Username: string;
+  //   Password: string;
+  //   Host: string;
+  //   Port: number;
+  //   To: string;
+  //   From: string;
+  //   Subject: string;
+  //   Body: string;
+  // }
 
   // const confiq: configuraation = {
   //   Username: "abbalolo360@BiLogoGmail.com",
