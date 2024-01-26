@@ -47,27 +47,27 @@ function ContactUSForm() {
   };
 
 
-  interface configuraation {
-    Username: string;
-    Password: string;
-    Host: string;
-    Port: number;
-    To: string;
-    From: string;
-    Subject: string;
-    Body: string;
-  }
+  // interface configuraation {
+  //   Username: string;
+  //   Password: string;
+  //   Host: string;
+  //   Port: number;
+  //   To: string;
+  //   From: string;
+  //   Subject: string;
+  //   Body: string;
+  // }
 
-  const confiq: configuraation = {
-    Username: "abbalolo360@BiLogoGmail.com",
-    Password: "9905B5F359D408A9A291653A608C32AE55BE",
-    Host: "smtp.elasticemail.com",
-    Port: 2525,
-    To: "them@website.com",
-    From: "you@isp.com",
-    Subject: "This is the subject",
-    Body: "And this is the body",
-  };
+  // const confiq: configuraation = {
+  //   Username: "abbalolo360@BiLogoGmail.com",
+  //   Password: "9905B5F359D408A9A291653A608C32AE55BE",
+  //   Host: "smtp.elasticemail.com",
+  //   Port: 2525,
+  //   To: "them@website.com",
+  //   From: "you@isp.com",
+  //   Subject: "This is the subject",
+  //   Body: "And this is the body",
+  // };
 
  
   return (
